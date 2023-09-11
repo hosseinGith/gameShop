@@ -922,11 +922,13 @@ main {
   align-items: center;
   justify-content: space-between;
 }
+.aboutSect4Text p {
+  color: #fff;
+}
 .sect4Slider {
   margin-top: 50px;
   direction: ltr;
 }
-
 .sect4Slider .item {
   width: 100px;
   direction: rtl;
