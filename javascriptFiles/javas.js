@@ -169,7 +169,8 @@ function main() {
           items: 4,
         },
       },
-    });$(".sect8Slider").owlCarousel({
+    });
+    $(".sect8Slider").owlCarousel({
       loop: true,
       margin: 20,
       responsive: {
