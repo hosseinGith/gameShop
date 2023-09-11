@@ -1083,7 +1083,7 @@ main {
   gap: 50px;
 }
 .section7Div .aboutSect7Text b {
-  font-size: 50px;
+  font-size: 30px;
   font-family: iranyekan;
   color: #ffffff00;
   background: url(../images/textPLC.webp);
@@ -1310,7 +1310,7 @@ footer {
 }
 .footerContent .socialMedia .item img {
   width: 100%;
-  max-width: 60px;
+  max-width: 35px;
 }
 .footerDiv .lastDiv {
   width: 100%;
@@ -1422,14 +1422,14 @@ footer {
   .sect6Slider .item .optionalUserSelect a.hideImgElement {
     display: flex;
   }
+  .section7Div .aboutSect7Text b {
+    font-size: 50px;
+  }
   .footerContent {
     flex-direction: row;
   }
   .footerContent .socialMedia .socialMediaImages {
     grid-template-columns: 1fr;
-  }
-  .footerContent .socialMedia .item img {
-    max-width: 35px;
   }
   .footerDiv .lastDiv {
     flex-direction: row;
