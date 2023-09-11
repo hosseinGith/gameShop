@@ -51,7 +51,17 @@ body {
   color: var(--font-color);
   font-family: vazir;
 }
-
+body.light {
+  --body-back-ground: #fff;
+  --font-color: #000000;
+  --text-in-img-color: #ffffff;
+  --background-inpCheck: #b4b4b418;
+  --input-place: #ffffff7e;
+  --nav-bar-background: #979797;
+  --low-color-font: #616161;
+  --absolute-text-color: #00000044;
+  --as-background-color: #eee;
+}
 header > section > div,
 main > section > div,
 main > article > div,
@@ -289,6 +299,55 @@ header {
 }
 .rightContainer .logoIMG img {
   width: 100%;
+}
+.dayAndNightBtn {
+  direction: ltr;
+}
+.dayNBtn {
+  width: 80px;
+  border: 0;
+  background: var(--font-color);
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 7px 10px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+.dayNBtn::after {
+  content: "";
+  width: 30px;
+  height: 30px;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%) translateX(14%);
+  display: block;
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid;
+  background: rgb(0, 102, 255);
+  transition: all 0.3s ease;
+}
+body.light .dayNBtn::after {
+  transform: translateX(140%) translateY(-50%);
+}
+.dayNBtn i {
+  font-size: 20px;
+  z-index: 2;
+  color: var(--font-color);
+  transition: all 0.3s ease;
+}
+body .dayNBtn i:first-child {
+  color: var(--font-color);
+}
+body .dayNBtn i:last-child {
+  color: #000;
+}
+body.light .dayNBtn i:first-child {
+  color: #fff;
+}
+body.light .dayNBtn i:last-child {
+  color: #000;
 }
 
 .leftContainer {
@@ -875,6 +934,7 @@ main {
   flex-direction: column;
   align-items: center;
   gap: 10px;
+  color: var(--text-in-img-color);
 }
 .section5Div {
   display: flex;
@@ -1228,6 +1288,7 @@ main {
   bottom: 20px;
   position: fixed;
   overflow: hidden;
+  border: 0;
   background-color: var(--as-background-color);
   z-index: 3;
 }
@@ -1339,7 +1400,7 @@ footer {
   display: flex;
   align-items: center;
   gap: 10px;
-  color: var(--low-color-font);
+  color: #cfcfcf;
 }
 .footerContent .socialMedia .item img {
   width: 100%;
