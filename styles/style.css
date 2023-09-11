@@ -1293,6 +1293,7 @@ footer {
   width: 30px;
   vertical-align: middle;
 }
+
 .footerContent .logoAndAboutAs .aboutAs .num a {
   color: var(--low-color-font);
   text-decoration: underline;
