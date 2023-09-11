@@ -1,0 +1,12 @@
+<svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="64"
+                        height="60"
+                        viewBox="0 0 64 60"
+                        fill="none"
+                      >
+                        <path
+                          d="M28 28V4.5L0 8V28H28ZM32 28H64V0L32 4V28ZM32 32V56L64 60V32H32ZM28 32H0V52L28 55.5V32Z"
+                          fill="#00BCD4"
+                        /></svg
+                      >
