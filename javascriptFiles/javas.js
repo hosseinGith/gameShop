@@ -2,6 +2,7 @@ const gifLoadDocument = document.querySelector(".gifLoadDocument");
 
 function main() {
   const checkShopeds = document.querySelector(".checkShopPcs"),
+    pcsShoped = document.querySelector(".pcsShoped"),
     menuBtn = document.querySelector(".menuBtn"),
     menuContainer = document.querySelector(".menuContainer"),
     chooseOptionMenu = document.querySelector(".chooseOptionMenu"),
@@ -10,7 +11,8 @@ function main() {
     cartShop = document.querySelector(".cartShop"),
     navChild = document.querySelector(".navChild"),
     moveIMGScrolling = document.querySelector(".moveIMGScrolling"),
-    toFirstPage = document.querySelector(".toFirstPage");
+    toFirstPage = document.querySelector(".toFirstPage"),
+    dayNBtn = document.querySelector(".dayNBtn");
 
   //------------------function for add class to display element with animation----------------------
   function displayElementWithAnimateHover(element) {
@@ -24,7 +26,6 @@ function main() {
     });
   }
   //----------------------------------------------------------
-
   menuBtn.addEventListener("click", () => {
     document.body.classList.add("blur");
     menuContainer.classList.add("active");
@@ -35,7 +36,9 @@ function main() {
       menuContainer.classList.remove("unActive");
     }
   });
-
+  dayNBtn.addEventListener("click", () => {
+    document.body.classList.toggle("light");
+  });
   optionMenuBtn.addEventListener("click", () => {
     chooseOptionMenu.classList.remove("active");
   });
@@ -55,11 +58,17 @@ function main() {
     )
       displayElementWithAnimateMouseLeave(cartShop);
   });
+  if (Number(pcsShoped.innerHTML) === 0) {
+    checkShopeds.classList.add("empty");
+  }
   navChild.addEventListener("mouseover", () => {
     displayElementWithAnimateHover(navChild);
   });
   navChild.addEventListener("mouseleave", () => {
     displayElementWithAnimateMouseLeave(navChild);
+  });
+  toFirstPage.addEventListener("click", () => {
+    window.scroll(0, 0);
   });
   toFirstPage.addEventListener("mouseover", () => {
     toFirstPage.classList.add("active");
@@ -85,9 +94,8 @@ function main() {
     } else if (toFirstPage.parentElement.classList.contains("active")) {
       displayElementWithAnimateMouseLeave(toFirstPage.parentElement);
     }
-    if (window.innerWidth < 1000 || scrollY > 10) return;
+    if (window.innerWidth < 1000 || scrollY > 40) return;
     moveIMGScrolling.style.transform = `translateY(-${scrollY}px)`;
-    console.log(scrollY);
   });
   // for check the window if the width under 1050 the cartshop not displayed
   if (window.innerWidth > 1050) checkShopeds.classList.add("active");
