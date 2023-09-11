@@ -1297,6 +1297,10 @@ footer {
   color: var(--low-color-font);
   text-decoration: underline;
 }
+.footerContent .logoAndAboutAs .aboutAs .email a {
+  color: var(--low-color-font);
+  text-decoration: underline;
+}
 .footerContent .contents {
   width: 100%;
   display: flex;
