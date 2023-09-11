@@ -1293,14 +1293,11 @@ footer {
 }
 .footerContent .socialMedia .socialMediaImages {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 }
 .footerContent .socialMedia .item {
-  width: 70%;
   padding: 10px;
   background-color: #00000098;
   border-radius: 20px;
@@ -1312,7 +1309,8 @@ footer {
   color: var(--low-color-font);
 }
 .footerContent .socialMedia .item img {
-  width: 35px;
+  width: 100%;
+  max-width: 60px;
 }
 .footerDiv .lastDiv {
   width: 100%;
@@ -1320,11 +1318,9 @@ footer {
   padding: 5px 20px;
   background: linear-gradient(90deg, #5667ff 0%, #a04cff 100%) no-repeat;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
-}
-.footerDiv .lastDiv p {
-  max-width: 300px;
 }
 @media screen and (max-width: 810px) {
   .aboutSect2GamesIMG {
@@ -1427,6 +1423,15 @@ footer {
     display: flex;
   }
   .footerContent {
+    flex-direction: row;
+  }
+  .footerContent .socialMedia .socialMediaImages {
+    grid-template-columns: 1fr;
+  }
+  .footerContent .socialMedia .item img {
+    max-width: 35px;
+  }
+  .footerDiv .lastDiv {
     flex-direction: row;
   }
 }
