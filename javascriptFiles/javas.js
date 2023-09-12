@@ -12,8 +12,11 @@ function main() {
     navChild = document.querySelector(".navChild"),
     moveIMGScrolling = document.querySelector(".moveIMGScrolling"),
     toFirstPage = document.querySelector(".toFirstPage"),
-    dayNBtn = document.querySelector(".dayNBtn");
+    dayNBtn = document.querySelector(".dayNBtn"),
+    dayAudio = document.querySelector(".dayAudio"),
+    nightAudio = document.querySelector(".nightAudio");
 
+  let checkDayNight = false;
   //------------------function for add class to display element with animation----------------------
   function displayElementWithAnimateHover(element) {
     element.classList.add("active");
@@ -26,6 +29,12 @@ function main() {
     });
   }
   //----------------------------------------------------------
+  if (
+    localStorage.getItem("checkDayNight") &&
+    localStorage.getItem("checkDayNight") === "true"
+  ) {
+    document.body.classList.add("light");
+  } else document.body.classList.remove("light");
   menuBtn.addEventListener("click", () => {
     document.body.classList.add("blur");
     menuContainer.classList.add("active");
@@ -38,6 +47,19 @@ function main() {
   });
   dayNBtn.addEventListener("click", () => {
     document.body.classList.toggle("light");
+    if (document.body.classList.contains("light")) {
+      checkDayNight = true;
+      dayAudio.play();
+      nightAudio.pause();
+    } else {
+      checkDayNight = false;
+      nightAudio.play();
+      dayAudio.pause();
+    }
+    localStorage.setItem("checkDayNight", checkDayNight);
+  });
+  window.addEventListener("keyup", (e) => {
+    if (e.altKey && e.key == "n") document.body.classList.toggle("light");
   });
   optionMenuBtn.addEventListener("click", () => {
     chooseOptionMenu.classList.remove("active");
