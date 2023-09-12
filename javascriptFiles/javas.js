@@ -49,17 +49,18 @@ function main() {
     document.body.classList.toggle("light");
     if (document.body.classList.contains("light")) {
       checkDayNight = true;
+      dayAudio.currentTime = 0;
+      nightAudio.currentTime = 0;
       dayAudio.play();
       nightAudio.pause();
     } else {
       checkDayNight = false;
+      dayAudio.currentTime = 0;
+      nightAudio.currentTime = 0;
       nightAudio.play();
       dayAudio.pause();
     }
     localStorage.setItem("checkDayNight", checkDayNight);
-  });
-  window.addEventListener("keyup", (e) => {
-    if (e.altKey && e.key == "n") document.body.classList.toggle("light");
   });
   optionMenuBtn.addEventListener("click", () => {
     chooseOptionMenu.classList.remove("active");
