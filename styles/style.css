@@ -85,7 +85,7 @@ header {
   align-items: center;
   justify-content: center;
   transition: all 0s;
-  background-color: var(--body-back-ground);
+  background-color: #0e1120;
 }
 .gifLoadDocument img {
   width: 250px;
@@ -300,9 +300,7 @@ header {
 .rightContainer .logoIMG img {
   width: 100%;
 }
-.dayAndNightBtn {
-  direction: ltr;
-}
+
 .dayNBtn {
   width: 80px;
   border: 0;
@@ -313,7 +311,7 @@ header {
   padding: 7px 10px;
   border-radius: 20px;
   transition: all 0.3s ease;
-  cursor:pointer;
+  cursor: pointer;
 }
 .dayNBtn::after {
   content: "";
@@ -339,16 +337,16 @@ body.light .dayNBtn::after {
   transition: all 0.3s ease;
 }
 body .dayNBtn i:first-child {
-  color: var(--font-color);
+  color: #000;
 }
 body .dayNBtn i:last-child {
-  color: #000;
-}
-body.light .dayNBtn i:first-child {
   color: #fff;
 }
-body.light .dayNBtn i:last-child {
+body.light .dayNBtn i:first-child {
   color: #000;
+}
+body.light .dayNBtn i:last-child {
+  color: #fff;
 }
 
 .leftContainer {
@@ -695,6 +693,9 @@ main {
   background-clip: text;
   -webkit-background-clip: text;
 }
+body.light .buyCPText {
+  color: #000;
+}
 .titleLeftContainer div {
   display: flex;
   align-items: center;
@@ -757,7 +758,7 @@ main {
   width: 100%;
   padding: 20px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, 350px);
+  grid-template-columns: 1fr;
   grid-auto-rows: max(200px);
   justify-content: center;
   gap: 30px;
@@ -781,6 +782,7 @@ main {
 .aboutSect2GamesIMG .item .aboutGame .gameName {
   font-size: 16px;
 }
+
 .price {
   font-family: faNum;
 }
@@ -851,7 +853,7 @@ main {
   padding: 5px 0;
 }
 .sect3Slider .aboutGameText .gameName {
-  color: var(--font-color);
+  color: #fff;
 }
 
 .sect3Slider .aboutGameText .price {
@@ -1419,9 +1421,9 @@ footer {
   justify-content: space-between;
   align-items: center;
 }
-@media screen and (max-width: 810px) {
+@media screen and (min-width: 810px) {
   .aboutSect2GamesIMG {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fit, 350px);
   }
 }
 @media screen and (min-width: 1050px) {
