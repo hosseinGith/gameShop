@@ -464,6 +464,9 @@ body.light .dayNBtn i:last-child {
 .leftContainer .cartShop .checkShopPcs.empty .emptyView {
   display: flex;
 }
+.leftContainer .contact svg path {
+  stroke: var(--font-color);
+}
 .underHeaderNavbar {
   display: none;
   padding: 0 10px;
