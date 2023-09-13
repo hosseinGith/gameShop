@@ -222,7 +222,6 @@ function main() {
   for (let index = 0; index < allImages.length; index++) {
     allImages[index].addEventListener("load", () => {
       if (allImages.length - 1 === index) {
-        console.log(index, allImages.length);
         gifLoadDocument.classList.add("animation");
         gifLoadDocument.addEventListener("animationend", () =>
           gifLoadDocument.remove()
