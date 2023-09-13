@@ -219,14 +219,16 @@ function main() {
     });
   });
   //-----for remove loading page when the all images are loaded-------------
- allImages.forEach((element, index) => {
-    element.addEventListener("load", () => {
-      if (allImages[index] > !138) return;
-      gifLoadDocument.classList.add("animation");
-      gifLoadDocument.addEventListener("animationend", () =>
-        gifLoadDocument.remove()
-      );
+  for (let index = 0; index < allImages.length; index++) {
+    allImages[index].addEventListener("load", () => {
+      if (allImages.length - 1 === index) {
+        console.log(index, allImages.length);
+        gifLoadDocument.classList.add("animation");
+        gifLoadDocument.addEventListener("animationend", () =>
+          gifLoadDocument.remove()
+        );
+      }
     });
-  });
+  }
 }
 document.addEventListener("DOMContentLoaded", main);
