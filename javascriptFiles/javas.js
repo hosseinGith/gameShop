@@ -14,8 +14,9 @@ function main() {
     toFirstPage = document.querySelector(".toFirstPage"),
     dayNBtn = document.querySelector(".dayNBtn"),
     dayAudio = document.querySelector(".dayAudio"),
-    nightAudio = document.querySelector(".nightAudio");
-
+    nightAudio = document.querySelector(".nightAudio"),
+    allImages = document.querySelectorAll("img");
+  
   let checkDayNight = false;
   //------------------function for add class to display element with animation----------------------
   function displayElementWithAnimateHover(element) {
@@ -217,12 +218,15 @@ function main() {
       },
     });
   });
-  //-----for remove loading page after 100 milliseconds-------------
-  setTimeout(() => {
-    gifLoadDocument.classList.add("animation");
-    gifLoadDocument.addEventListener("animationend", () =>
-      gifLoadDocument.remove()
-    );
-  }, 100);
+  //-----for remove loading page when the all images are loaded-------------
+ allImages.forEach((element, index) => {
+    element.addEventListener("load", () => {
+      if (allImages[index] > !138) return;
+      gifLoadDocument.classList.add("animation");
+      gifLoadDocument.addEventListener("animationend", () =>
+        gifLoadDocument.remove()
+      );
+    });
+  });
 }
 document.addEventListener("DOMContentLoaded", main);
