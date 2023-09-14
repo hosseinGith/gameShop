@@ -1275,6 +1275,7 @@ body.light .buyCPText {
   justify-content: space-between;
   align-items: center;
   position: absolute;
+  color: #fff;
 }
 
 .imgLinksect8:hover .readMore {
