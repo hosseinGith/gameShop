@@ -33,6 +33,7 @@
   text-decoration: none;
   list-style-type: none;
   outline: 0;
+  transition: inherit;
 }
 html,
 body {
@@ -42,6 +43,7 @@ body {
   background-color: var(--body-back-ground);
   color: var(--font-color);
   font-family: vazir;
+  transition: none;
 }
 body.light {
   --body-back-ground: #fff;
@@ -76,7 +78,6 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 0s;
   background-color: #0e1120;
 }
 .gifLoadDocument img {
@@ -274,6 +275,7 @@ header {
   padding: 0 5px;
   outline: 0;
   border: 0;
+  transition: all 0.3s;
 }
 
 .rightContainer input::placeholder {
@@ -282,6 +284,7 @@ header {
 .rightContainer .searchInput i {
   color: var(--low-color-font);
   cursor: pointer;
+  transition: all 0.3s;
 }
 .rightContainer .searchInput i:hover {
   color: var(--font-color);
@@ -354,7 +357,6 @@ body.light .dayNBtn::after {
   font-size: 20px;
   z-index: 2;
   color: var(--font-color);
-  transition: all 0.3s ease;
 }
 body .dayNBtn i:first-child {
   color: #000;
@@ -380,6 +382,7 @@ body.light .dayNBtn i:last-child {
   font-size: 13px;
   color: var(--font-color);
   padding: 20px;
+  transition: all 0.3s;
 }
 
 .leftContainer > a:not(.cartShop) {
@@ -399,6 +402,7 @@ body.light .dayNBtn i:last-child {
 }
 .leftContainer .cartShop:hover > i {
   opacity: 0.6;
+  transition: all 0.3s;
 }
 .leftContainer .cartShop .pcsShoped {
   background-color: #920dff;
@@ -504,6 +508,7 @@ body.light .dayNBtn i:last-child {
   font-size: 14px;
   padding: 15px;
   gap: 5px;
+  transition: all 0.3s;
 }
 .ulParentHeaderNavbar li a:hover {
   opacity: 0.8;
@@ -648,6 +653,9 @@ main {
   color: var(--font-color);
   margin: 5px;
 }
+.underTextTitle a i {
+  transition: all 0.3s;
+}
 .underTextTitle a:hover > i {
   transform: translateX(-5px);
 }
@@ -773,6 +781,7 @@ body.light .buyCPText {
   color: var(--font-color);
   background-color: var(--as-background-color);
   border-radius: 20px;
+  transition: all 0.3s;
 }
 .seeAllLink a:hover i {
   transform: translateX(-5px);
@@ -1190,6 +1199,9 @@ body.light .buyCPText {
   flex-direction: column;
   gap: 50px;
 }
+.section7Div .aboutSect7Text i {
+  transition: all 0.3s;
+}
 .section7Div .aboutSect7Text b {
   font-size: 30px;
   font-family: iranyekan;
@@ -1235,6 +1247,7 @@ body.light .buyCPText {
 .imgLinksect8 {
   position: relative;
   overflow: hidden;
+  transition: all 0.3s;
 }
 .imgLinksect8:hover img {
   scale: 1.1;
@@ -1502,6 +1515,7 @@ footer {
     opacity: 0;
     top: 50%;
     transform: translateY(-30%);
+    transition: all 0.3s;
   }
   .sect3Slider .item:hover .optionalUserSelect {
     opacity: 1;
@@ -1532,6 +1546,7 @@ footer {
     opacity: 0;
     top: 50%;
     transform: translateY(-30%);
+    transition: all 0.3s;
   }
   .section5Div .leftContainer .item:hover .optionalUserSelect {
     opacity: 1;
@@ -1546,6 +1561,7 @@ footer {
     opacity: 0;
     top: 50%;
     transform: translateY(-30%);
+    transition: all 0.3s;
   }
   .sect6Slider .item:hover .optionalUserSelect {
     opacity: 1;
