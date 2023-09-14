@@ -13,9 +13,9 @@ function main() {
     moveIMGScrolling = document.querySelector(".moveIMGScrolling"),
     toFirstPage = document.querySelector(".toFirstPage"),
     dayNBtn = document.querySelector(".dayNBtn"),
-    dayAudio = document.querySelector(".dayAudio"),
-    nightAudio = document.querySelector(".nightAudio");
-  
+    daySound = document.querySelector(".dayAudio"),
+    nightSound = document.querySelector(".nightAudio");
+
   let checkDayNight = false;
   //------------------function for add class to display element with animation----------------------
   function displayElementWithAnimateHover(element) {
@@ -49,16 +49,14 @@ function main() {
     document.body.classList.toggle("light");
     if (document.body.classList.contains("light")) {
       checkDayNight = true;
-      dayAudio.currentTime = 0;
-      nightAudio.currentTime = 0;
-      dayAudio.play();
-      nightAudio.pause();
+      daySound.currentTime = 0;
+      daySound.play();
+      nightSound.pause();
     } else {
       checkDayNight = false;
-      dayAudio.currentTime = 0;
-      nightAudio.currentTime = 0;
-      nightAudio.play();
-      dayAudio.pause();
+      nightSound.currentTime = 0;
+      nightSound.play();
+      daySound.pause();
     }
     localStorage.setItem("checkDayNight", checkDayNight);
   });
@@ -127,100 +125,98 @@ function main() {
     else checkShopeds.classList.remove("active");
   });
 
-  $(document).ready(function () {
-    $(".aboutWebsiteOptions").owlCarousel({
-      buttons: false,
-      dots: false,
-      responsiveRefreshRate: 200,
-      responsiveClass: true,
-      autoplay: true,
-      autoplayTimeout: 10000,
-      responsive: {
-        0: { items: 1 },
-        400: { items: 2 },
-        1000: { items: 3 },
-      },
-    });
-    $(".sect3Slider").owlCarousel({
-      buttons: true,
-      responsiveRefreshRate: 200,
-      margin: 50,
-      responsiveClass: true,
-      loop: true,
-      responsive: {
-        0: {
-          items: 1,
-        },
-        500: {
-          items: 2,
-        },
-        700: {
-          items: 3,
-        },
-        1000: {
-          items: 4,
-        },
-      },
-    });
-    $(".sect4Slider").owlCarousel({
-      loop: true,
-      responsiveClass: true,
-      responsive: {
-        0: {
-          items: 2,
-        },
-        500: {
-          items: 4,
-        },
-        1000: {
-          items: 8,
-        },
-      },
-    });
-    $(".section5Div .leftContainer").owlCarousel({
-      loop: true,
-      margin: 20,
-      responsive: {
-        0: {
-          items: 2,
-        },
-        700: {
-          items: 3,
-        },
-      },
-    });
-    $(".sect6Slider").owlCarousel({
-      loop: true,
-      margin: 20,
-      responsive: {
-        0: {
-          items: 2,
-        },
-        700: {
-          items: 4,
-        },
-      },
-    });
-    $(".sect8Slider").owlCarousel({
-      loop: true,
-      margin: 20,
-      responsive: {
-        0: {
-          items: 1,
-        },
-        600: {
-          items: 2,
-        },
-        900: {
-          items: 4,
-        },
-      },
-    });
+  $(".aboutWebsiteOptions").owlCarousel({
+    buttons: false,
+    dots: false,
+    responsiveRefreshRate: 200,
+    responsiveClass: true,
+    autoplay: true,
+    autoplayTimeout: 10000,
+    responsive: {
+      0: { items: 1 },
+      400: { items: 2 },
+      1000: { items: 3 },
+    },
   });
-  //-----for remove loading page when the all images are loaded-------------
-   gifLoadDocument.classList.add("animation");
-    gifLoadDocument.addEventListener("animationend", () =>
-      gifLoadDocument.remove()
-    );
+  $(".sect3Slider").owlCarousel({
+    buttons: true,
+    responsiveRefreshRate: 200,
+    margin: 50,
+    responsiveClass: true,
+    loop: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      500: {
+        items: 2,
+      },
+      700: {
+        items: 3,
+      },
+      1000: {
+        items: 4,
+      },
+    },
+  });
+  $(".sect4Slider").owlCarousel({
+    loop: true,
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 2,
+      },
+      500: {
+        items: 4,
+      },
+      1000: {
+        items: 8,
+      },
+    },
+  });
+  $(".section5Div .leftContainer").owlCarousel({
+    loop: true,
+    margin: 20,
+    responsive: {
+      0: {
+        items: 2,
+      },
+      700: {
+        items: 3,
+      },
+    },
+  });
+  $(".sect6Slider").owlCarousel({
+    loop: true,
+    margin: 20,
+    responsive: {
+      0: {
+        items: 2,
+      },
+      700: {
+        items: 4,
+      },
+    },
+  });
+  $(".sect8Slider").owlCarousel({
+    loop: true,
+    margin: 20,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      600: {
+        items: 2,
+      },
+      900: {
+        items: 4,
+      },
+    },
+  });
+  //-----for remove loading page when the loaded document-------------
+  gifLoadDocument.classList.add("animation");
+  gifLoadDocument.addEventListener("animationend", () =>
+    gifLoadDocument.remove()
+  );
 }
 document.addEventListener("DOMContentLoaded", main);
