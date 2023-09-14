@@ -1,27 +1,20 @@
 @font-face {
   font-family: vazir;
-  src: url(../fonts/vazir/Vazir.ttf) format("truetype");
-  src: url(../fonts/vazir/Vazir.woff) format("woff");
+  src: url(../assets/fonts/vazir/Vazir.ttf) format("truetype");
+  src: url(../assets/fonts/vazir/Vazir.woff) format("woff");
 }
 @font-face {
   font-family: iranyekan;
-  src: url(../fonts/iranyekan/iranyekanBold.ttf) format("truetype");
-}
-@font-face {
-  font-family: shafigh;
-  src: url(../fonts/Mj_Shafigh/shafigh.ttf) format("truetype");
-}
-@font-face {
-  font-family: googleFontOpenSans;
-  src: url(../fonts/googleFont/OpenSans-Light.ttf) format("truetype");
+  src: url(../assets/fonts/iranyekan/iranyekanBold.ttf) format("truetype");
 }
 @font-face {
   font-family: googleFontMontserrat;
-  src: url(../fonts/googleFont/Montserrat-ExtraBold.ttf) format("truetype");
+  src: url(../assets/fonts/googleFont/Montserrat-ExtraBold.ttf)
+    format("truetype");
 }
 @font-face {
   font-family: faNum;
-  src: url(../fonts/faNumber/faNum.TTF) format("truetype");
+  src: url(../assets/fonts/faNumber/faNum.TTF) format("truetype");
 }
 :root {
   --body-back-ground: #0e1120;
@@ -40,7 +33,6 @@
   text-decoration: none;
   list-style-type: none;
   outline: 0;
-  transition: all 0.3s;
 }
 html,
 body {
@@ -312,6 +304,7 @@ header {
   border-radius: 20px;
   transition: all 0.3s ease;
   cursor: pointer;
+  transform-style: preserve-3d;
 }
 .dayNBtn::after {
   content: "";
@@ -327,8 +320,35 @@ header {
   background: rgb(0, 102, 255);
   transition: all 0.3s ease;
 }
+body:not(.light) .dayNBtn::after {
+  transform: translateY(-50%) translateX(14%);
+  animation: NightAfterAnimate 0.5s ease-in-out;
+}
 body.light .dayNBtn::after {
   transform: translateX(140%) translateY(-50%);
+  animation: dayAfterAnimate 0.5s ease;
+}
+@keyframes NightAfterAnimate {
+  0% {
+    transform: translateX(140%) translateY(-50%);
+  }
+  50% {
+    width: 50%;
+  }
+  100% {
+    transform: translateY(-50%) translateX(14%);
+  }
+}
+@keyframes dayAfterAnimate {
+  0% {
+    transform: translateY(-50%) translateX(14%);
+  }
+  50% {
+    width: 50%;
+  }
+  100% {
+    transform: translateX(140%) translateY(-50%);
+  }
 }
 .dayNBtn i {
   font-size: 20px;
@@ -447,6 +467,7 @@ body.light .dayNBtn i:last-child {
   justify-content: center;
   gap: 20px;
   padding: 10px;
+  font-family: vazir;
 }
 .leftContainer .cartShop .checkShopPcs .emptyView i {
   font-size: 100px;
@@ -458,7 +479,6 @@ body.light .dayNBtn i:last-child {
   font-size: 16px;
   color: var(--font-color);
   background: #a04cff;
-  font-family: vazir;
 }
 
 .leftContainer .cartShop .checkShopPcs.empty .emptyView {
@@ -692,7 +712,7 @@ main {
   position: absolute;
   white-space: nowrap;
   color: #00000000;
-  background: url(../images/textPLC.webp);
+  background: url(../assets/images/textPLC.webp);
   background-clip: text;
   -webkit-background-clip: text;
 }
@@ -907,14 +927,13 @@ body.light .buyCPText {
   border-radius: 50%;
   background-color: var(--low-color-font);
 }
-.sect3Slider .owl-dots button.active,
-.sect3Slider .owl-dots button:hover {
+.sect3Slider .owl-dots button.active {
   background-color: #000;
   outline: 1px solid #920dff;
 }
 .section4 {
   width: 100%;
-  background: url(../images/clash-royal-3.jpg) center no-repeat fixed;
+  background: url(../assets/images/clash-royal-3.jpg) center no-repeat fixed;
   background-size: cover;
   display: flex;
   padding: 190px 0;
@@ -1158,7 +1177,8 @@ body.light .buyCPText {
 }
 
 .section7 {
-  background: url(../images/pubg-bg-luman-theme.jpg) no-repeat center fixed;
+  background: url(../assets/images/pubg-bg-luman-theme.jpg) no-repeat center
+    fixed;
   background-size: cover;
   min-height: 500px;
   display: flex;
@@ -1174,7 +1194,7 @@ body.light .buyCPText {
   font-size: 30px;
   font-family: iranyekan;
   color: #ffffff00;
-  background: url(../images/textPLC.webp);
+  background: url(../assets/images/textPLC.webp);
   background-size: cover;
   background-clip: text;
   -webkit-background-clip: text;
@@ -1290,27 +1310,36 @@ body.light .buyCPText {
   width: 35px;
   height: 35px;
   padding: 5px;
-  border-radius: 5px;
+  border-radius: 7px;
   rotate: 0deg;
+  overflow: hidden;
   left: 30px;
   bottom: 20px;
   position: fixed;
-  overflow: hidden;
+  z-index: 5;
   border: 0;
+  border: 1px solid;
   background-color: var(--as-background-color);
-  z-index: 3;
+  transition: all 0.3s;
+}
+body.light .toFirstPage {
+  border: 1px solid #afafaf;
+}
+.toFirstPage svg {
+  transition: all 0.3s;
 }
 .toFirstPage svg path {
   fill: var(--font-color);
 }
 .toFirstPage.active {
   background-color: #920dff;
+  border: 0;
 }
 .toFirstPage.active svg:first-child {
   transform: translateY(-100%);
 }
 .toFirstPage.active svg:last-child {
-  transform: translateY(-125%);
+  transform: translateY(-110%);
 }
 
 /* footer start*/
@@ -1390,7 +1419,6 @@ footer {
 .footerContent .socialMedia {
   display: flex;
   flex-direction: column;
-  gap: 20px;
 }
 .footerContent .socialMedia .socialMediaImages {
   width: 100%;
@@ -1483,6 +1511,10 @@ footer {
   }
   .sect3Slider .item .optionalUserSelect a.hideImgElement {
     display: flex;
+  }
+  .sect3Slider .owl-dots button:hover {
+    background-color: #000;
+    outline: 1px solid #920dff;
   }
   .sect3Slider .owl-nav {
     display: none;
