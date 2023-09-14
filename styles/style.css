@@ -1086,6 +1086,7 @@ body.light .buyCPText {
   direction: rtl;
   white-space: nowrap;
   text-overflow: clip;
+  color: #fff;
 }
 
 .section5Div .leftContainer .item .priceContainer .price {
