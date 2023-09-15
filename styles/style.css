@@ -56,14 +56,11 @@ body.light {
   --absolute-text-color: #00000044;
   --as-background-color: #eee;
 }
-header > section > div,
-main > section > div,
-main > article > div,
-footer > section > div {
+.container {
   max-width: 1366px;
   padding: 0 10px;
   width: 100%;
-  margin: auto;
+  margin: 0 auto;
 }
 /* header start*/
 header {
