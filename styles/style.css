@@ -1328,8 +1328,8 @@ body.light .buyCPText {
   left: 30px;
   bottom: 20px;
   position: fixed;
-  z-index: 4;
   border: 0;
+  z-index: 4;
   border: 1px solid;
   background-color: var(--as-background-color);
   transition: all 0.3s;
