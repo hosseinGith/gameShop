@@ -1410,9 +1410,32 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <script src="javascriptFiles/owl.carousel.min.js"></script>
+    <script src="scripts/script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <script src="javascriptFiles/script.js"></script>
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-analytics.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyCDNv7rtpeknkRjH4AF911hKlC1EaG3Jqw",
+        authDomain: "game-shop-322ed.firebaseapp.com",
+        projectId: "game-shop-322ed",
+        storageBucket: "game-shop-322ed.appspot.com",
+        messagingSenderId: "271680403296",
+        appId: "1:271680403296:web:461db143d9a3709eb01005",
+        measurementId: "G-PQDCQV7Q03",
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script>
+    <script src="scripts/script.js"></script>
   </body>
 </html>
