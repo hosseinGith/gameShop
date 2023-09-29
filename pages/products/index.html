@@ -1,0 +1,1384 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../styles/products.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="icon"
+      href="../../assets/images/web-page-logo-32x32.png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      href="../../assets/images/web-page-logo-192x192.png"
+      sizes="192x192"
+    />
+    <title>سبد خرید</title>
+  </head>
+  <body>
+    <header>
+      <section class="gifLoadDocument container">
+        <img
+          src="../../assets/images/Loading.gif"
+          alt="loading gif / صفحه انتظار"
+        />
+      </section>
+      <section class="headerSect">
+        <div class="headerDiv container">
+          <div class="menuBtnContainer">
+            <button name="menuBtn" class="menuBtn fa-solid fa-bars"></button>
+            <div class="menuContainer">
+              <div class="menuContent">
+                <div class="searchMenu">
+                  <input type="text" placeholder="جستجو برای محصولات" />
+                  <button name="searchBtn"><i class="fa fa-search"></i></button>
+                </div>
+                <div class="chooseOptionMenu">
+                  <button name="optionMenu" class="optionMenu">منو</button>
+                  <button name="sortByBtn" class="sortByBtn">
+                    دسته بندی ها
+                  </button>
+                </div>
+                <nav class="menuOptions">
+                  <ul class="menuOptionContent">
+                    <li>
+                      <a href="#"
+                        ><img
+                          src="../../assets/svgs/XBOX.svg"
+                          alt="XBOX icon / ایکس باکس"
+                        />ایکس باکس</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#">
+                        <img
+                          src="../../assets/svgs/steam.svg"
+                          alt="steam icon / استیم"
+                        />استیم</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#">
+                        <img
+                          src="../../assets/svgs/orginal.svg"
+                          alt="orginal icon / اصلی "
+                        />اورجینال</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#">
+                        <img
+                          src="../../assets/svgs/mincraft.svg"
+                          alt="mincraft icon / ئاینکرافت"
+                        />
+                        ماینکرافت
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <img
+                          src="../../assets/svgs/csGo.svg"
+                          alt="csgo icon / ماینکرافت"
+                        />
+                        CS-GO
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <img
+                          src="../../assets/svgs/windows.svg"
+                          alt="windows icon / ویندوز"
+                        />
+                        ویندوز
+                      </a>
+                    </li>
+                  </ul>
+                  <ul class="sortByOptionContent">
+                    <li>
+                      <a href="#">بازی های موبایل</a>
+                    </li>
+                    <li>
+                      <a href="#">ایکس باکس وان</a>
+                    </li>
+                    <li>
+                      <a href="#">خرید اکانت پرمیوم</a>
+                    </li>
+                    <li>
+                      <a href="#">بازی های استیم و اورجین</a>
+                    </li>
+                    <li>
+                      <a href="#">اکانت قانونی پلی استیشن</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+          <div class="rightContainer">
+            <div class="logoIMG">
+              <a href="../../index.html">
+                <img
+                  src="../../assets/images/logo.png"
+                  alt="قالب لومان فروشــــگاه بازی"
+                />
+              </a>
+            </div>
+            <div class="searchInput">
+              <input type="text" placeholder="جستجو برای محصولات" />
+              <i class="fa fa-search"></i>
+            </div>
+          </div>
+          <div class="dayAndNightBtn">
+            <audio class="dayAudio">
+              <source src="../../assets/audio/day.mp3" />
+            </audio>
+            <audio class="nightAudio">
+              <source src="../../assets/audio/night.mp3" />
+            </audio>
+            <button name="changePageColor" class="dayNBtn">
+              <i class="fa fa-sun"></i>
+              <i class="fa fa-moon"></i>
+            </button>
+          </div>
+          <div class="leftContainer">
+            <a href="./">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M15.7497 9.47182V6.43982C15.7547 4.35182 14.0657 2.65482 11.9777 2.64982C9.88874 2.64582 8.19274 4.33482 8.18774 6.42282V9.47182"
+                  stroke="#A04CFF"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M2.94995 14.2076C2.94995 8.91362 5.20495 7.14862 11.969 7.14862C18.733 7.14862 20.988 8.91362 20.988 14.2076C20.988 19.5006 18.733 21.2656 11.969 21.2656C5.20495 21.2656 2.94995 19.5006 2.94995 14.2076Z"
+                  stroke="#A04CFF"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+              محصولات
+            </a>
+            <a href="../beloved/" class="userlikes">
+              <img
+                src="../../assets/svgs/userLike.svg"
+                alt="heart icon / ایکون قلب"
+              />
+              مورد علاقه
+            </a>
+            <a href="../cart/" class="cartShop">
+              <i class="fa fa-cart-shopping"></i>
+              <span class="pcsShoped">0</span>
+              <div class="checkShopPcs">
+                <div class="emptyView">
+                  <i class="fa-solid fa-cart-plus"></i>
+                  <p>هیچ محصولی در سبد خرید نیست.</p>
+                  <a href="#">بازگشت به فروشــــگاه</a>
+                </div>
+              </div>
+            </a>
+            <button name="loginBtn" class="contact">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M11.8445 21.662C8.15273 21.662 5 21.0875 5 18.7868C5 16.486 8.13273 14.362 11.8445 14.362C15.5364 14.362 18.6891 16.4654 18.6891 18.7662C18.6891 21.066 15.5564 21.662 11.8445 21.662Z"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M11.8372 11.1738C14.26 11.1738 16.2236 9.21012 16.2236 6.78739C16.2236 4.36466 14.26 2.40012 11.8372 2.40012C9.41452 2.40012 7.44998 4.36466 7.44998 6.78739C7.4418 9.20193 9.3918 11.1656 11.8063 11.1738C11.8172 11.1738 11.8272 11.1738 11.8372 11.1738Z"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+            <div class="signUpSignInContainer">
+              <div class="signUpSignIn">
+                <div class="headOfSignUp">
+                  <p class="titleSignin">ورود</p>
+                  <button name="closeWindow" class="closeWindow">
+                    بستن <i class="fa fa-remove"></i>
+                  </button>
+                </div>
+                <hr />
+                <form class="signinForm">
+                  <div class="inputsAndSignin">
+                    <label for="userName">
+                      نام کاربری یا ایمیل
+                      <strong>*</strong>
+                    </label>
+                    <input type="text" id="userName" />
+                    <label for="password">گذرواژه <strong>*</strong></label>
+                    <input type="password" id="password" />
+                  </div>
+
+                  <div class="remember">
+                    <label for="rememberMe"> مرا به خاطر بسپار</label>
+                    <input type="checkbox" id="rememberMe" />
+                  </div>
+                  <a href="#">گذرواژه خود را فراموش کرده اید؟</a>
+                  <button name="login" class="loginBtn">ورود</button>
+                </form>
+                <hr />
+                <div class="signUp">
+                  <img
+                    src="../../assets/svgs/contact.svg"
+                    alt="contact icon / مخاطب"
+                  />
+                  <p>هنوز حسابی ندارید؟</p>
+                  <a href="#" class="createAccount"
+                    >یک حساب کاربری ایجاد کنید</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="underHeaderNavbar">
+        <div class="navDiv container">
+          <nav>
+            <ul class="ulParentHeaderNavbar">
+              <nav class="navChild">
+                <span>
+                  <img
+                    src="../../assets/svgs/window.svg"
+                    alt="window icon / ویندوز"
+                  />
+                  دسته محصولات
+                </span>
+                <ul class="ulChildNavbar">
+                  <li>
+                    <a href="#">بازی های موبایل</a>
+                  </li>
+                  <li>
+                    <a href="#">ایکس باکس وان</a>
+                  </li>
+                  <li>
+                    <a href="#">خرید اکانت پرمیوم</a>
+                  </li>
+                  <li>
+                    <a href="#">بازی های استیم و اورجین</a>
+                  </li>
+                  <li>
+                    <a href="#">اکانت قانونی پلی استیشن</a>
+                  </li>
+                </ul>
+              </nav>
+              <li>
+                <a href="#">
+                  <img
+                    src="../../assets/svgs/XBOX.svg"
+                    alt="XBOX icon / ایکس باکس"
+                  />ایکس باکس</a
+                >
+              </li>
+              <li>
+                <a href="#">
+                  <img
+                    src="../../assets/svgs/steam.svg"
+                    alt="steam icon / استیم"
+                  />استیم</a
+                >
+              </li>
+              <li>
+                <a href="#">
+                  <img
+                    src="../../assets/svgs/orginal.svg"
+                    alt="orginal icon / اصلی"
+                  />اورجینال</a
+                >
+              </li>
+              <li>
+                <a href="#">
+                  <img
+                    src="../../assets/svgs/mincraft.svg"
+                    alt="mincraft icon / ماینکرافت"
+                  />
+                  ماینکرافت
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img
+                    src="../../assets/svgs/csGo.svg"
+                    alt="csgo icon / سی اس گو"
+                  />
+                  CS-GO
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img
+                    src="../../assets/svgs/windows.svg"
+                    alt="windows icon / ویندوز "
+                  />
+                  ویندوز
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+      <section class="section4">
+        <div class="container">
+          <div class="aboutSite">
+            <h1>فروشگاه</h1>
+            <div class="links">
+              <div class="all">
+                <a href="./">همه</a>
+                <span>محصولات</span>
+              </div>
+              <div class="playstionAccount">
+                <a href="#">اکانت قانونی پلی استیشن</a>
+                <span>محضولات 6</span>
+              </div>
+              <div class="XBOX1">
+                <a href="#">ایکس باکس وان</a>
+                <span>محصولات 3</span>
+              </div>
+              <div class="origingSteamGame">
+                <a href="#">بازی های استیم و اورجین</a>
+                <span>محصولات 6</span>
+              </div>
+              <div class="buyPremiomAccount">
+                <a href="#">خرید اکانت پرمیوم</a>
+                <span>محصولات 6</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+    <main>
+      <section>
+        <div class="container">
+          <div class="commoditysContainer">
+            <div class="commodityOptions">
+              <div class="pathOfSite">
+                <a href="../../">خانه</a>
+                <span>/</span>
+                <span>فروشگاه</span>
+              </div>
+              <div class="sortCommodity">
+                <div class="pcsCommodity">
+                  <span>نمایش:</span>
+                  <button class="pcs12">12</button>
+                  <span>/</span>
+                  <button class="pcs20">20</button>
+                  <span>/</span>
+                  <button class="pcs30">30</button>
+                  <span>/</span>
+                  <button class="allCommodity active">همه</button>
+                </div>
+                <div class="sortCommodity">
+                  <select name="sortCommodity">
+                    <option value="0">مرتب‌سازی پیش‌فرض</option>
+                    <option value="1">مرتب‌سازی بر اساس محبوبیت</option>
+                    <option value="2">مرتب‌سازی بر اساس امتیاز</option>
+                    <option value="3">مرتب‌سازی بر اساس آخرین</option>
+                    <option value="4">مرتب‌سازی بر اساس ارزانترین</option>
+                    <option value="5">مرتب‌سازی بر اساس گرانترین</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="commoditys">
+              <div class="item">
+                <a href="#">
+                  <img
+                    src="../../assets/images/productsPageImg/1.webp"
+                    alt="Forza horizon 4 / فوزا هورایزون 4"
+                  />
+                  <span class="gameName"> فوزا هورایزون 4</span>
+                </a>
+                <div class="optionalUserSelect">
+                  <a href="#">
+                    <img src="../../assets/images/cart_shop.png" alt="heart" />
+                  </a>
+                  <a href="#" class="hideImgElement">
+                    <i class="fa fa-search"></i>
+                  </a>
+                  <a href="#" class="hideImgElement">
+                    <img src="../../assets/svgs/asGitIcon.svg" alt="xxxx" />
+                  </a>
+                  <a href="#">
+                    <img
+                      src="../../assets/images/heart_1077035.png"
+                      alt="heart"
+                    />
+                  </a>
+                </div>
+                <span class="price">110000 تومان</span>
+              </div>
+              <div class="item">
+                <a href="#">
+                  <img
+                    src="../../assets/images/productsPageImg/2.webp"
+                    alt="اوری و اراده خردمندان / ori"
+                  />
+                  <span class="gameName">اوری و اراده خردمندان</span>
+                </a>
+                <div class="optionalUserSelect">
+                  <a href="#">
+                    <img src="../../assets/images/cart_shop.png" alt="heart" />
+                  </a>
+                  <a href="#" class="hideImgElement">
+                    <i class="fa fa-search"></i>
+                  </a>
+                  <a href="#" class="hideImgElement">
+                    <img src="../../assets/svgs/asGitIcon.svg" alt="xxxx" />
+                  </a>
+                  <a href="#">
+                    <img
+                      src="../../assets/images/heart_1077035.png"
+                      alt="heart"
+                    />
+                  </a>
+                </div>
+                <span class="price">110000 تومان</span>
+              </div>
+              <div class="item">
+                <a href="#">
+                  <img
+                    src="../../assets/images/productsPageImg/3.webp"
+                    alt="the witcher wild hunt / ویچر ۳: وایلد هانت"
+                  />
+                  <span class="gameName">ویچر ۳: وایلد هانت</span>
+                </a>
+                <div class="optionalUserSelect">
+                  <a href="#">
+                    <img src="../../assets/images/cart_shop.png" alt="heart" />
+                  </a>
+                  <a href="#" class="hideImgElement">
+                    <i class="fa fa-search"></i>
+                  </a>
+                  <a href="#" class="hideImgElement">
+                    <img src="../../assets/svgs/asGitIcon.svg" alt="xxxx" />
+                  </a>
+                  <a href="#">
+                    <img
+                      src="../../assets/images/heart_1077035.png"
+                      alt="heart"
+                    />
+                  </a>
+                </div>
+                <span class="price">110000 تومان</span>
+              </div>
+              <div class="item">
+                <a href="#">
+                  <img
+                    src="../../assets/images/productsPageImg/4.webp"
+                    alt="rainbowsix extraction / رینبو سیکس اکسترکشن"
+                  />
+                  <span class="gameName">رینبو سیکس اکسترکشن</span>
+                </a>
+                <div class="optionalUserSelect">
+                  <a href="#">
+                    <img src="../../assets/images/cart_shop.png" alt="heart" />
+                  </a>
+                  <a href="#" class="hideImgElement">
+                    <i class="fa fa-search"></i>
+                  </a>
+                  <a href="#" class="hideImgElement">
+                    <img src="../../assets/svgs/asGitIcon.svg" alt="xxxx" />
+                  </a>
+                  <a href="#">
+                    <img
+                      src="../../assets/images/heart_1077035.png"
+                      alt="heart"
+                    />
+                  </a>
+                </div>
+                <span class="price">110000 تومان</span>
+              </div>
+              <div class="item">
+                <a href="">
+                  <img
+                    src="../../assets/images/productsPageImg/5.webp"
+                    alt="mortal kombat 11 / مورتال ممبت 11 آلتیمیت "
+                  />
+                  <span class="gameName">مورتال ممبت 11 آلتیمیت</span>
+                </a>
+                <div class="optionalUserSelect">
+                  <a href="#">
+                    <img src="../../assets/images/cart_shop.png" alt="heart" />
+                  </a>
+                  <a href="#" class="hideImgElement">
+                    <i class="fa fa-search"></i>
+                  </a>
+                  <a href="#" class="hideImgElement">
+                    <img src="../../assets/svgs/asGitIcon.svg" alt="xxxx" />
+                  </a>
+                  <a href="#">
+                    <img
+                      src="../../assets/images/heart_1077035.png"
+                      alt="heart"
+                    />
+                  </a>
+                </div>
+                <span class="price">110000 تومان</span>
+              </div>
+              <div class="item">
+                <a href="">
+                  <img
+                    src="../../assets/images/productsPageImg/6.webp"
+                    alt="spider man / مرد عنکبوتی"
+                  /><span class="gameName">ساپایدرمن</span>
+                </a>
+                <div class="optionalUserSelect">
+                  <a href="#">
+                    <img src="../../assets/images/cart_shop.png" alt="heart" />
+                  </a>
+                  <a href="#" class="hideImgElement">
+                    <i class="fa fa-search"></i>
+                  </a>
+                  <a href="#" class="hideImgElement">
+                    <img src="../../assets/svgs/asGitIcon.svg" alt="xxxx" />
+                  </a>
+                  <a href="#">
+                    <img
+                      src="../../assets/images/heart_1077035.png"
+                      alt="heart"
+                    />
+                  </a>
+                </div>
+                <span class="price">110000 تومان</span>
+              </div>
+              <div class="item">
+                <a href="">
+                  <img
+                    src="../../assets/images/productsPageImg/7.webp"
+                    alt="کال آف دیوتی وارزون موبایل / call of duty war zone"
+                  />
+                  <span class="gameName">کال آف دیوتی وارزون موبایل</span>
+                </a>
+                <div class="optionalUserSelect">
+                  <a href="#">
+                    <img src="../../assets/images/cart_shop.png" alt="heart" />
+                  </a>
+                  <a href="#" class="hideImgElement">
+                    <i class="fa fa-search"></i>
+                  </a>
+                  <a href="#" class="hideImgElement">
+                    <img src="../../assets/svgs/asGitIcon.svg" alt="xxxx" />
+                  </a>
+                  <a href="#">
+                    <img
+                      src="../../assets/images/heart_1077035.png"
+                      alt="heart"
+                    />
+                  </a>
+                </div>
+                <span class="price">110000 تومان</span>
+              </div>
+              <div class="item">
+                <a href="">
+                  <img
+                    src="../../assets/images/productsPageImg/8.webp"
+                    alt="xxxx"
+                  /><span class="gameName"></span>
+                </a>
+                <div class="optionalUserSelect">
+                  <a href="#">
+                    <img src="../../assets/images/cart_shop.png" alt="heart" />
+                  </a>
+                  <a href="#" class="hideImgElement">
+                    <i class="fa fa-search"></i>
+                  </a>
+                  <a href="#" class="hideImgElement">
+                    <img src="../../assets/svgs/asGitIcon.svg" alt="xxxx" />
+                  </a>
+                  <a href="#">
+                    <img
+                      src="../../assets/images/heart_1077035.png"
+                      alt="heart"
+                    />
+                  </a>
+                </div>
+                <span class="price">110000 تومان</span>
+              </div>
+              <div class="item">
+                <a href="">
+                  <img
+                    src="../../assets/images/productsPageImg/9.webp"
+                    alt="xxxx"
+                  /><span class="gameName"></span>
+                </a>
+                <div class="optionalUserSelect">
+                  <a href="#">
+                    <img src="../../assets/images/cart_shop.png" alt="heart" />
+                  </a>
+                  <a href="#" class="hideImgElement">
+                    <i class="fa fa-search"></i>
+                  </a>
+                  <a href="#" class="hideImgElement">
+                    <img src="../../assets/svgs/asGitIcon.svg" alt="xxxx" />
+                  </a>
+                  <a href="#">
+                    <img
+                      src="../../assets/images/heart_1077035.png"
+                      alt="heart"
+                    />
+                  </a>
+                </div>
+                <span class="price">110000 تومان</span>
+              </div>
+              <div class="item">
+                <a href="">
+                  <img
+                    src="../../assets/images/productsPageImg/10.webp"
+                    alt="xxxx"
+                  /><span class="gameName"></span>
+                </a>
+                <div class="optionalUserSelect">
+                  <a href="#">
+                    <img src="../../assets/images/cart_shop.png" alt="heart" />
+                  </a>
+                  <a href="#" class="hideImgElement">
+                    <i class="fa fa-search"></i>
+                  </a>
+                  <a href="#" class="hideImgElement">
+                    <img src="../../assets/svgs/asGitIcon.svg" alt="xxxx" />
+                  </a>
+                  <a href="#">
+                    <img
+                      src="../../assets/images/heart_1077035.png"
+                      alt="heart"
+                    />
+                  </a>
+                </div>
+                <span class="price">110000 تومان</span>
+              </div>
+              <div class="item">
+                <a href="">
+                  <img
+                    src="../../assets/images/productsPageImg/11.webp"
+                    alt="xxxx"
+                  /><span class="gameName"></span>
+                </a>
+                <div class="optionalUserSelect">
+                  <a href="#">
+                    <img src="../../assets/images/cart_shop.png" alt="heart" />
+                  </a>
+                  <a href="#" class="hideImgElement">
+                    <i class="fa fa-search"></i>
+                  </a>
+                  <a href="#" class="hideImgElement">
+                    <img src="../../assets/svgs/asGitIcon.svg" alt="xxxx" />
+                  </a>
+                  <a href="#">
+                    <img
+                      src="../../assets/images/heart_1077035.png"
+                      alt="heart"
+                    />
+                  </a>
+                </div>
+                <span class="price">110000 تومان</span>
+              </div>
+              <div class="item">
+                <a href="">
+                  <img
+                    src="../../assets/images/productsPageImg/12.webp"
+                    alt="xxxx"
+                  /><span class="gameName"></span>
+                </a>
+                <div class="optionalUserSelect">
+                  <a href="#">
+                    <img src="../../assets/images/cart_shop.png" alt="heart" />
+                  </a>
+                  <a href="#" class="hideImgElement">
+                    <i class="fa fa-search"></i>
+                  </a>
+                  <a href="#" class="hideImgElement">
+                    <img src="../../assets/svgs/asGitIcon.svg" alt="xxxx" />
+                  </a>
+                  <a href="#">
+                    <img
+                      src="../../assets/images/heart_1077035.png"
+                      alt="heart"
+                    />
+                  </a>
+                </div>
+                <span class="price">110000 تومان</span>
+              </div>
+              <div class="item">
+                <a href="">
+                  <img
+                    src="../../assets/images/productsPageImg/13.webp"
+                    alt="xxxx"
+                  /><span class="gameName"></span>
+                </a>
+                <div class="optionalUserSelect">
+                  <a href="#">
+                    <img src="../../assets/images/cart_shop.png" alt="heart" />
+                  </a>
+                  <a href="#" class="hideImgElement">
+                    <i class="fa fa-search"></i>
+                  </a>
+                  <a href="#" class="hideImgElement">
+                    <img src="../../assets/svgs/asGitIcon.svg" alt="xxxx" />
+                  </a>
+                  <a href="#">
+                    <img
+                      src="../../assets/images/heart_1077035.png"
+                      alt="heart"
+                    />
+                  </a>
+                </div>
+                <span class="price">110000 تومان</span>
+              </div>
+              <div class="item">
+                <a href="">
+                  <img
+                    src="../../assets/images/productsPageImg/14.webp"
+                    alt="xxxx"
+                  /><span class="gameName"></span>
+                </a>
+                <div class="optionalUserSelect">
+                  <a href="#">
+                    <img src="../../assets/images/cart_shop.png" alt="heart" />
+                  </a>
+                  <a href="#" class="hideImgElement">
+                    <i class="fa fa-search"></i>
+                  </a>
+                  <a href="#" class="hideImgElement">
+                    <img src="../../assets/svgs/asGitIcon.svg" alt="xxxx" />
+                  </a>
+                  <a href="#">
+                    <img
+                      src="../../assets/images/heart_1077035.png"
+                      alt="heart"
+                    />
+                  </a>
+                </div>
+                <span class="price">110000 تومان</span>
+              </div>
+              <div class="item">
+                <a href="">
+                  <img
+                    src="../../assets/images/productsPageImg/15.webp"
+                    alt="xxxx"
+                  /><span class="gameName"></span>
+                </a>
+                <div class="optionalUserSelect">
+                  <a href="#">
+                    <img src="../../assets/images/cart_shop.png" alt="heart" />
+                  </a>
+                  <a href="#" class="hideImgElement">
+                    <i class="fa fa-search"></i>
+                  </a>
+                  <a href="#" class="hideImgElement">
+                    <img src="../../assets/svgs/asGitIcon.svg" alt="xxxx" />
+                  </a>
+                  <a href="#">
+                    <img
+                      src="../../assets/images/heart_1077035.png"
+                      alt="heart"
+                    />
+                  </a>
+                </div>
+                <span class="price">110000 تومان</span>
+              </div>
+              <div class="item">
+                <a href="">
+                  <img
+                    src="../../assets/images/productsPageImg/16.jpg"
+                    alt="xxxx"
+                  /><span class="gameName"></span>
+                </a>
+                <div class="optionalUserSelect">
+                  <a href="#">
+                    <img src="../../assets/images/cart_shop.png" alt="heart" />
+                  </a>
+                  <a href="#" class="hideImgElement">
+                    <i class="fa fa-search"></i>
+                  </a>
+                  <a href="#" class="hideImgElement">
+                    <img src="../../assets/svgs/asGitIcon.svg" alt="xxxx" />
+                  </a>
+                  <a href="#">
+                    <img
+                      src="../../assets/images/heart_1077035.png"
+                      alt="heart"
+                    />
+                  </a>
+                </div>
+                <span class="price">110000 تومان</span>
+              </div>
+              <div class="item">
+                <a href="">
+                  <img
+                    src="../../assets/images/productsPageImg/17.webp"
+                    alt="xxxx"
+                  /><span class="gameName"></span>
+                </a>
+                <div class="optionalUserSelect">
+                  <a href="#">
+                    <img src="../../assets/images/cart_shop.png" alt="heart" />
+                  </a>
+                  <a href="#" class="hideImgElement">
+                    <i class="fa fa-search"></i>
+                  </a>
+                  <a href="#" class="hideImgElement">
+                    <img src="../../assets/svgs/asGitIcon.svg" alt="xxxx" />
+                  </a>
+                  <a href="#">
+                    <img
+                      src="../../assets/images/heart_1077035.png"
+                      alt="heart"
+                    />
+                  </a>
+                </div>
+                <span class="price">110000 تومان</span>
+              </div>
+              <div class="item">
+                <a href="">
+                  <img
+                    src="../../assets/images/productsPageImg/18.jpg"
+                    alt="xxxx"
+                  /><span class="gameName"></span>
+                </a>
+                <div class="optionalUserSelect">
+                  <a href="#">
+                    <img src="../../assets/images/cart_shop.png" alt="heart" />
+                  </a>
+                  <a href="#" class="hideImgElement">
+                    <i class="fa fa-search"></i>
+                  </a>
+                  <a href="#" class="hideImgElement">
+                    <img src="../../assets/svgs/asGitIcon.svg" alt="xxxx" />
+                  </a>
+                  <a href="#">
+                    <img
+                      src="../../assets/images/heart_1077035.png"
+                      alt="heart"
+                    />
+                  </a>
+                </div>
+                <span class="price">110000 تومان</span>
+              </div>
+              <div class="item">
+                <a href="">
+                  <img
+                    src="../../assets/images/productsPageImg/19.webp"
+                    alt="xxxx"
+                  /><span class="gameName"></span>
+                </a>
+                <div class="optionalUserSelect">
+                  <a href="#">
+                    <img src="../../assets/images/cart_shop.png" alt="heart" />
+                  </a>
+                  <a href="#" class="hideImgElement">
+                    <i class="fa fa-search"></i>
+                  </a>
+                  <a href="#" class="hideImgElement">
+                    <img src="../../assets/svgs/asGitIcon.svg" alt="xxxx" />
+                  </a>
+                  <a href="#">
+                    <img
+                      src="../../assets/images/heart_1077035.png"
+                      alt="heart"
+                    />
+                  </a>
+                </div>
+                <span class="price">110000 تومان</span>
+              </div>
+              <div class="item">
+                <a href="">
+                  <img
+                    src="../../assets/images/productsPageImg/20.webp"
+                    alt="xxxx"
+                  />
+                  <span class="gameName"></span>
+                </a>
+                <div class="optionalUserSelect">
+                  <a href="#">
+                    <img src="../../assets/images/cart_shop.png" alt="heart" />
+                  </a>
+                  <a href="#" class="hideImgElement">
+                    <i class="fa fa-search"></i>
+                  </a>
+                  <a href="#" class="hideImgElement">
+                    <img src="../../assets/svgs/asGitIcon.svg" alt="xxxx" />
+                  </a>
+                  <a href="#">
+                    <img
+                      src="../../assets/images/heart_1077035.png"
+                      alt="heart"
+                    />
+                  </a>
+                </div>
+                <span class="price">110000 تومان</span>
+              </div>
+              <div class="item">
+                <a href="">
+                  <img
+                    src="../../assets/images/productsPageImg/21.jpg"
+                    alt="xxxx"
+                  /><span class="gameName"></span>
+                </a>
+                <div class="optionalUserSelect">
+                  <a href="#">
+                    <img src="../../assets/images/cart_shop.png" alt="heart" />
+                  </a>
+                  <a href="#" class="hideImgElement">
+                    <i class="fa fa-search"></i>
+                  </a>
+                  <a href="#" class="hideImgElement">
+                    <img src="../../assets/svgs/asGitIcon.svg" alt="xxxx" />
+                  </a>
+                  <a href="#">
+                    <img
+                      src="../../assets/images/heart_1077035.png"
+                      alt="heart"
+                    />
+                  </a>
+                </div>
+                <span class="price">110000 تومان</span>
+              </div>
+              <div class="item">
+                <a href="">
+                  <img
+                    src="../../assets/images/productsPageImg/22.webp"
+                    alt="xxxx"
+                  /><span class="gameName"></span>
+                </a>
+                <div class="optionalUserSelect">
+                  <a href="#">
+                    <img src="../../assets/images/cart_shop.png" alt="heart" />
+                  </a>
+                  <a href="#" class="hideImgElement">
+                    <i class="fa fa-search"></i>
+                  </a>
+                  <a href="#" class="hideImgElement">
+                    <img src="../../assets/svgs/asGitIcon.svg" alt="xxxx" />
+                  </a>
+                  <a href="#">
+                    <img
+                      src="../../assets/images/heart_1077035.png"
+                      alt="heart"
+                    />
+                  </a>
+                </div>
+                <span class="price">110000 تومان</span>
+              </div>
+              <div class="item">
+                <a href="">
+                  <img
+                    src="../../assets/images/productsPageImg/23.webp"
+                    alt="xxxx"
+                  /><span class="gameName"></span>
+                </a>
+                <div class="optionalUserSelect">
+                  <a href="#">
+                    <img src="../../assets/images/cart_shop.png" alt="heart" />
+                  </a>
+                  <a href="#" class="hideImgElement">
+                    <i class="fa fa-search"></i>
+                  </a>
+                  <a href="#" class="hideImgElement">
+                    <img src="../../assets/svgs/asGitIcon.svg" alt="xxxx" />
+                  </a>
+                  <a href="#">
+                    <img
+                      src="../../assets/images/heart_1077035.png"
+                      alt="heart"
+                    />
+                  </a>
+                </div>
+                <span class="price">110000 تومان</span>
+              </div>
+              <div class="item">
+                <a href="">
+                  <img
+                    src="../../assets/images/productsPageImg/24.webp"
+                    alt="xxxx"
+                  /><span class="gameName"></span>
+                </a>
+                <div class="optionalUserSelect">
+                  <a href="#">
+                    <img src="../../assets/images/cart_shop.png" alt="heart" />
+                  </a>
+                  <a href="#" class="hideImgElement">
+                    <i class="fa fa-search"></i>
+                  </a>
+                  <a href="#" class="hideImgElement">
+                    <img src="../../assets/svgs/asGitIcon.svg" alt="xxxx" />
+                  </a>
+                  <a href="#">
+                    <img
+                      src="../../assets/images/heart_1077035.png"
+                      alt="heart"
+                    />
+                  </a>
+                </div>
+                <span class="price">110000 تومان</span>
+              </div>
+              <div class="item">
+                <a href="">
+                  <img
+                    src="../../assets/images/productsPageImg/25.webp"
+                    alt="xxxx"
+                  /><span class="gameName"></span>
+                </a>
+                <div class="optionalUserSelect">
+                  <a href="#">
+                    <img src="../../assets/images/cart_shop.png" alt="heart" />
+                  </a>
+                  <a href="#" class="hideImgElement">
+                    <i class="fa fa-search"></i>
+                  </a>
+                  <a href="#" class="hideImgElement">
+                    <img src="../../assets/svgs/asGitIcon.svg" alt="xxxx" />
+                  </a>
+                  <a href="#">
+                    <img
+                      src="../../assets/images/heart_1077035.png"
+                      alt="heart"
+                    />
+                  </a>
+                </div>
+                <span class="price">110000 تومان</span>
+              </div>
+              <div class="item">
+                <a href="">
+                  <img
+                    src="../../assets/images/productsPageImg/26.webp"
+                    alt="xxxx"
+                  /><span class="gameName"></span>
+                </a>
+                <div class="optionalUserSelect">
+                  <a href="#">
+                    <img src="../../assets/images/cart_shop.png" alt="heart" />
+                  </a>
+                  <a href="#" class="hideImgElement">
+                    <i class="fa fa-search"></i>
+                  </a>
+                  <a href="#" class="hideImgElement">
+                    <img src="../../assets/svgs/asGitIcon.svg" alt="xxxx" />
+                  </a>
+                  <a href="#">
+                    <img
+                      src="../../assets/images/heart_1077035.png"
+                      alt="heart"
+                    />
+                  </a>
+                </div>
+                <span class="price">110000 تومان</span>
+              </div>
+              <div class="item">
+                <a href="">
+                  <img
+                    src="../../assets/images/productsPageImg/27.webp"
+                    alt="xxxx"
+                  /><span class="gameName"></span>
+                </a>
+                <div class="optionalUserSelect">
+                  <a href="#">
+                    <img src="../../assets/images/cart_shop.png" alt="heart" />
+                  </a>
+                  <a href="#" class="hideImgElement">
+                    <i class="fa fa-search"></i>
+                  </a>
+                  <a href="#" class="hideImgElement">
+                    <img src="../../assets/svgs/asGitIcon.svg" alt="xxxx" />
+                  </a>
+                  <a href="#">
+                    <img
+                      src="../../assets/images/heart_1077035.png"
+                      alt="heart"
+                    />
+                  </a>
+                </div>
+                <span class="price">110000 تومان</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="toFirstPageContainer">
+        <button class="toFirstPage">
+          <svg
+            xmlns:dc="http://purl.org/dc/elements/1.1/"
+            xmlns:cc="http://creativecommons.org/ns#"
+            xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+            xmlns:svg="http://www.w3.org/2000/svg"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+            xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+            version="1.1"
+            x="0px"
+            y="0px"
+            viewBox="0 0 100 125"
+          >
+            <g transform="translate(0,-952.36218)">
+              <path
+                d="M 93,1020.4455 61.31577,984.27886 49.9999,971.3622 38.6842,984.27886 7,1020.4455 18.3157,1033.3622 49.9999,997.19552 81.68425,1033.3622 93,1020.4455 z"
+                fill="#000000"
+                stroke="#000000"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-miterlimit="4"
+                stroke-opacity="1"
+                stroke-dasharray="none"
+                fill-opacity="1"
+              />
+            </g>
+            <text
+              x="0"
+              y="115"
+              fill="#000000"
+              font-size="5px"
+              font-weight="bold"
+              font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif"
+            >
+              Created by ArtWorkLeaf
+            </text>
+            <text
+              x="0"
+              y="120"
+              fill="#000000"
+              font-size="5px"
+              font-weight="bold"
+              font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif"
+            >
+              from the Noun Project
+            </text>
+          </svg>
+          <svg
+            xmlns:dc="http://purl.org/dc/elements/1.1/"
+            xmlns:cc="http://creativecommons.org/ns#"
+            xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+            xmlns:svg="http://www.w3.org/2000/svg"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+            xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+            version="1.1"
+            x="0px"
+            y="0px"
+            viewBox="0 0 100 125"
+          >
+            <g transform="translate(0,-952.36218)">
+              <path
+                d="M 93,1020.4455 61.31577,984.27886 49.9999,971.3622 38.6842,984.27886 7,1020.4455 18.3157,1033.3622 49.9999,997.19552 81.68425,1033.3622 93,1020.4455 z"
+                fill="#000000"
+                stroke="#000000"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-miterlimit="4"
+                stroke-opacity="1"
+                stroke-dasharray="none"
+                fill-opacity="1"
+              />
+            </g>
+            <text
+              x="0"
+              y="115"
+              fill="#000000"
+              font-size="5px"
+              font-weight="bold"
+              font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif"
+            >
+              Created by ArtWorkLeaf
+            </text>
+            <text
+              x="0"
+              y="120"
+              fill="#000000"
+              font-size="5px"
+              font-weight="bold"
+              font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif"
+            >
+              from the Noun Project
+            </text>
+          </svg>
+        </button>
+      </section>
+    </main>
+    <footer>
+      <section>
+        <div class="footerDiv container">
+          <div class="footerContent">
+            <div class="logoAndAboutAs">
+              <a href="../../" class="logo">
+                <img
+                  src="../../assets/images/logo.png"
+                  alt="loman  / لومان فروشــــگاه بازی"
+                />
+              </a>
+              <div class="text">
+                <p>
+                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و
+                  با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و
+                  مجله در ستون و سطراست.
+                </p>
+              </div>
+              <div class="aboutAs">
+                <div class="num">
+                  <img
+                    src="../../assets/images/call-4.png"
+                    alt="headphone icon / تماس"
+                  />
+                  <span>
+                    <a href="tel:8638 297 0921">8638 297 0921</a> -
+                    <a href="tel:8638 297 0921">8638 297 0921</a>
+                  </span>
+                </div>
+                <div class="address">
+                  <img
+                    src="../../assets/images/location-1.png"
+                    alt="location icon / مکان"
+                  />
+                  <span>ایران - تهران - منطقه 1 - تجریش</span>
+                </div>
+                <div class="email">
+                  <img
+                    src="../../assets/images/email-2.png"
+                    alt="email icon / ایمیل"
+                  />
+                  <a href="mailto:hosseinderees@gmail.com"
+                    >hosseinderees@gmail.com</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="contents">
+              <nav class="mostUseLinks">
+                <h1>لینک های کاربردی</h1>
+                <ul>
+                  <li>
+                    <a href="#">وبــلاگ</a>
+                  </li>
+                  <li>
+                    <a href="#">دربــاره ما</a>
+                  </li>
+                  <li>
+                    <a href="#">فروشــــگاه</a>
+                  </li>
+                  <li>
+                    <a href="#">تــماس با ما</a>
+                  </li>
+                  <li>
+                    <a href="#">راهنمــای خرید</a>
+                  </li>
+                  <li>
+                    <a href="#">حریم خصوصی و امنیت</a>
+                  </li>
+                </ul>
+              </nav>
+              <nav class="CustomerLinks">
+                <h1>خدمات مشتریان</h1>
+                <ul>
+                  <li>
+                    <a href="#">حریم خصوصی</a>
+                  </li>
+                  <li>
+                    <a href="#">لینک های مفید</a>
+                  </li>
+                  <li>
+                    <a href="#">نحوه ثبت سفارش</a>
+                  </li>
+                  <li>
+                    <a href="#">رویه ارسال سفارش</a>
+                  </li>
+                  <li>
+                    <a href="#">رویه‌های بازگرداندن کالا</a>
+                  </li>
+                  <li>
+                    <a href="#">پاسخ به پرسش‌های متداول</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="socialMedia">
+              <h1>ما را دنبال کنید !</h1>
+              <div class="socialMediaImages">
+                <div class="item">
+                  <a href="#">
+                    <img
+                      src="../../assets/images/INSTAGRAM.png"
+                      alt="instagram icon / اینستاگرام"
+                    />
+                    <p>انستاگرام</p>
+                  </a>
+                </div>
+                <div class="item">
+                  <a href="#">
+                    <img
+                      src="../../assets/images/WHATSAPP.png"
+                      alt="whatsapp icon / واتساپ"
+                    />
+                    <p>واتساپ</p>
+                  </a>
+                </div>
+                <div class="item">
+                  <a href="#">
+                    <img
+                      src="../../assets/images/TWITTER.png"
+                      alt="twitter icon / توییتر"
+                    />
+                    <p>توییتر</p>
+                  </a>
+                </div>
+                <div class="item">
+                  <a href="#">
+                    <img
+                      src="../../assets/images/YOUTUBE.png"
+                      alt="youtube icon / یوتیوب"
+                    />
+                    <p>یوتیوب</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="lastDiv">
+            <p>کپی رایت@ 2023 برند شما. تمامی حقوق محفوظ است.</p>
+            <a href="#">
+              <img
+                width="40px"
+                src="../../assets/images/logo2-call-ot-duty-1024x861.png"
+                alt="call of duty logo / لوگوی کال اف دیوتی"
+              />
+            </a>
+            <p>Copyright © 2023 fullwp.ir</p>
+          </div>
+        </div>
+      </section>
+    </footer>
+    <script src="../../scripts/products.js"></script>
+  </body>
+</html>

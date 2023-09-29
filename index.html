@@ -8,13 +8,7 @@
       content="seodity-site-verification-535f13ce2058484fb2a9e9935b89cc02"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+
     <link
       rel="icon"
       href="https://theme.fullwp.ir/luman/game/wp-content/uploads/2023/06/favicon-150x150.png"
@@ -40,52 +34,74 @@
   <body>
     <header>
       <section class="gifLoadDocument container">
-        <img src="assets/images/Loading.gif" />
+        <img src="assets/images/Loading.gif" alt="loading gif / صفحه انتظار" />
       </section>
       <section class="headerSect">
         <div class="headerDiv container">
           <div class="menuBtnContainer">
-            <button class="menuBtn fa-solid fa-bars"></button>
+            <button name="menuBtn" class="menuBtn fa-solid fa-bars"></button>
             <div class="menuContainer">
               <div class="menuContent">
                 <div class="searchMenu">
                   <input type="text" placeholder="جستجو برای محصولات" />
-                  <button href="#"><i class="fa fa-search"></i></button>
+                  <button name="searchBtn"><i class="fa fa-search"></i></button>
                 </div>
                 <div class="chooseOptionMenu">
-                  <button class="optionMenu">منو</button>
-                  <button class="sortByBtn">دسته بندی ها</button>
+                  <button name="optionMenu" class="optionMenu">منو</button>
+                  <button name="sortByBtn" class="sortByBtn">
+                    دسته بندی ها
+                  </button>
                 </div>
                 <nav class="menuOptions">
                   <ul class="menuOptionContent">
                     <li>
                       <a href="#"
-                        ><img src="assets/svgs/XBOX.svg" />ایکس باکس</a
-                      >
-                    </li>
-                    <li>
-                      <a href="#"> <img src="assets/svgs/steam.svg" />استیم</a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <img src="assets/svgs/orginal.svg" />اورجینال</a
+                        ><img
+                          src="assets/svgs/XBOX.svg"
+                          alt="XBOX icon / ایکس باکس"
+                        />ایکس باکس</a
                       >
                     </li>
                     <li>
                       <a href="#">
-                        <img src="assets/svgs/mincraft.svg" />
+                        <img
+                          src="assets/svgs/steam.svg"
+                          alt="steam icon / استیم"
+                        />استیم</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#">
+                        <img
+                          src="assets/svgs/orginal.svg"
+                          alt="orginal icon / اصلی "
+                        />اورجینال</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#">
+                        <img
+                          src="assets/svgs/mincraft.svg"
+                          alt="mincraft icon / ئاینکرافت"
+                        />
                         ماینکرافت
                       </a>
                     </li>
                     <li>
                       <a href="#">
-                        <img src="assets/svgs/csGo.svg" />
+                        <img
+                          src="assets/svgs/csGo.svg"
+                          alt="csgo icon / ماینکرافت"
+                        />
                         CS-GO
                       </a>
                     </li>
                     <li>
                       <a href="#">
-                        <img src="assets/svgs/windows.svg" />
+                        <img
+                          src="assets/svgs/windows.svg"
+                          alt="windows icon / ویندوز"
+                        />
                         ویندوز
                       </a>
                     </li>
@@ -113,8 +129,11 @@
           </div>
           <div class="rightContainer">
             <div class="logoIMG">
-              <a href="#">
-                <img src="assets/images/logo.png" alt="Logo" />
+              <a href="../../index.html">
+                <img
+                  src="assets/images/logo.png"
+                  alt="قالب لومان فروشــــگاه بازی"
+                />
               </a>
             </div>
             <div class="searchInput">
@@ -129,13 +148,13 @@
             <audio class="nightAudio">
               <source src="assets/audio/night.mp3" />
             </audio>
-            <button class="dayNBtn">
+            <button name="changePageColor" class="dayNBtn">
               <i class="fa fa-sun"></i>
               <i class="fa fa-moon"></i>
             </button>
           </div>
           <div class="leftContainer">
-            <a href="#">
+            <a href="pages/products/">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -162,11 +181,14 @@
               </svg>
               محصولات
             </a>
-            <a href="#" class="userlikes">
-              <img src="assets/svgs/userLike.svg" alt="عکس" />
+            <a href="pages/beloved/index.html" class="userlikes">
+              <img
+                src="assets/svgs/userLike.svg"
+                alt="heart icon / ایکون قلب"
+              />
               مورد علاقه
             </a>
-            <button class="cartShop" href="#">
+            <button name="pcsShoped" class="cartShop">
               <i class="fa fa-cart-shopping"></i>
               <span class="pcsShoped">0</span>
               <div class="checkShopPcs">
@@ -177,7 +199,7 @@
                 </div>
               </div>
             </button>
-            <a href="#" class="contact">
+            <button name="loginBtn" class="contact">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -204,7 +226,45 @@
                   stroke-linejoin="round"
                 />
               </svg>
-            </a>
+            </button>
+            <div class="signUpSignInContainer">
+              <div class="signUpSignIn">
+                <div class="headOfSignUp">
+                  <p class="titleSignin">ورود</p>
+                  <button name="closeWindow" class="closeWindow">
+                    بستن <i class="fa fa-remove"></i>
+                  </button>
+                </div>
+                <hr />
+                <form class="signinForm">
+                  <div class="inputsAndSignin">
+                    <label for="userName">
+                      نام کاربری یا ایمیل
+                      <strong>*</strong>
+                    </label>
+                    <input type="text" id="userName" />
+                    <label for="password">گذرواژه <strong>*</strong></label>
+                    <input type="password" id="password" />
+                  </div>
+
+                  <div class="remember">
+                    <label for="rememberMe"> مرا به خاطر بسپار</label>
+                    <input type="checkbox" id="rememberMe" />
+                  </div>
+                  <a href="#">گذرواژه خود را فراموش کرده اید؟</a>
+                  <button name="login" class="loginBtn">ورود</button>
+                </form>
+                <hr />
+                <div class="signUp">
+                  <img
+                    src="assets/svgs/contact.svg"
+                    alt="contact icon / مخاطب"
+                  />
+                  <p>هنوز حسابی ندارید؟</p>
+                  <a href="#" class="createAcount">یک حساب کاربری ایجاد کنید</a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -214,7 +274,10 @@
             <ul class="ulParentHeaderNavbar">
               <nav class="navChild">
                 <span>
-                  <img src="assets/svgs/window.svg" />
+                  <img
+                    src="assets/svgs/window.svg"
+                    alt="window icon / ویندوز"
+                  />
                   دسته محصولات
                 </span>
                 <ul class="ulChildNavbar">
@@ -236,29 +299,50 @@
                 </ul>
               </nav>
               <li>
-                <a href="#"><img src="assets/svgs/XBOX.svg" />ایکس باکس</a>
-              </li>
-              <li>
-                <a href="#"> <img src="assets/svgs/steam.svg" />استیم</a>
-              </li>
-              <li>
-                <a href="#"> <img src="assets/svgs/orginal.svg" />اورجینال</a>
+                <a href="#"
+                  ><img
+                    src="assets/svgs/XBOX.svg"
+                    alt="XBOX icon / ایکس باکس"
+                  />ایکس باکس</a
+                >
               </li>
               <li>
                 <a href="#">
-                  <img src="assets/svgs/mincraft.svg" />
+                  <img
+                    src="assets/svgs/steam.svg"
+                    alt="steam icon / استیم"
+                  />استیم</a
+                >
+              </li>
+              <li>
+                <a href="#">
+                  <img
+                    src="assets/svgs/orginal.svg"
+                    alt="orginal icon / اصلی"
+                  />اورجینال</a
+                >
+              </li>
+              <li>
+                <a href="#">
+                  <img
+                    src="assets/svgs/mincraft.svg"
+                    alt="mincraft icon / ماینکرافت"
+                  />
                   ماینکرافت
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <img src="assets/svgs/csGo.svg" />
+                  <img src="assets/svgs/csGo.svg" alt="csgo icon / سی اس گو" />
                   CS-GO
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <img src="assets/svgs/windows.svg" />
+                  <img
+                    src="assets/svgs/windows.svg"
+                    alt="windows icon / ویندوز "
+                  />
                   ویندوز
                 </a>
               </li>
@@ -1413,29 +1497,6 @@
     <script src="scripts/owl.carousel.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <script type="module">
-      // Import the functions you need from the SDKs you need
-      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-app.js";
-      import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-analytics.js";
-      // TODO: Add SDKs for Firebase products that you want to use
-      // https://firebase.google.com/docs/web/setup#available-libraries
-
-      // Your web app's Firebase configuration
-      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-      const firebaseConfig = {
-        apiKey: "AIzaSyCDNv7rtpeknkRjH4AF911hKlC1EaG3Jqw",
-        authDomain: "game-shop-322ed.firebaseapp.com",
-        projectId: "game-shop-322ed",
-        storageBucket: "game-shop-322ed.appspot.com",
-        messagingSenderId: "271680403296",
-        appId: "1:271680403296:web:461db143d9a3709eb01005",
-        measurementId: "G-PQDCQV7Q03",
-      };
-
-      // Initialize Firebase
-      const app = initializeApp(firebaseConfig);
-      const analytics = getAnalytics(app);
-    </script>
     <script src="scripts/script.js"></script>
   </body>
 </html>
