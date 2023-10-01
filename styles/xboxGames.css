@@ -382,7 +382,7 @@ body.light .dayNBtn i:last-child {
   transition: all 0.3s;
 }
 
-.leftContainer > a:not(.cartShop),
+.leftContainer a:not(.cartShop),
 .leftContainer > .contact {
   display: none;
 }
@@ -758,131 +758,165 @@ body.light .dayNBtn i:last-child {
 .navChild ul li a:hover {
   opacity: 1;
 }
-.section3 {
+.section4 {
   background-color: var(--as-background-color);
 }
 .aboutSite {
-  width: 100%;
+  padding: 50px 0;
   display: flex;
   flex-direction: column;
-  text-align: center;
+  align-items: center;
   gap: 20px;
-  padding: 50px 0;
 }
 .aboutSite h1 {
-  font-size: 30px;
+  font-size: 40px;
 }
-.pathOfSite {
+.links {
   width: 100%;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
-  gap: 15px;
-  transition: all 0.3s;
+  font-size: 14px;
+  gap: 35px;
+}
+
+.links a {
+  position: relative;
+  font-size: 16px;
+  color: var(--font-color);
+  transition: opacity 0.3s;
+}
+.links a:hover {
+  opacity: 0.6;
+}
+.links > div {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.links > div a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0%;
+  padding: 1px 0;
+  background-color: #920dff;
+  transition: width 0.3s;
+}
+.links > div:first-child a::after {
+  width: 100%;
+}
+.links > div a:hover::after {
+  width: 100%;
+}
+.links p {
   color: var(--low-color-font);
-}
-.pathOfSite a {
-  color: #fff;
-}
-.pathOfSite a:hover {
-  opacity: 0.8;
 }
 /* main start */
 
-.emptyBeloved {
-  width: 100%;
+.commodityOptions {
+  margin: 30px 0;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  gap: 40px;
-}
-.textSubject {
-  display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
 }
-.textSubject i {
-  font-size: 200px;
-  color: var(--low-color-font);
-  opacity: 0.5;
-}
-.textUnderSubject {
+.pathOfSite {
   color: var(--low-color-font);
 }
-.textUnderSubject p {
-  margin: 20px 0;
+.pathOfSite a {
+  color: var(--font-color);
 }
-
-.backTomMainPageLink {
+.sortCommodity {
+  display: none;
+  gap: 20px;
+}
+.pcsCommodity {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.pcsCommodity button {
+  border: 0;
+  color: var(--low-color-font);
+  cursor: pointer;
+  font-size: 16px;
+  font-family: vazir;
+  background-color: transparent;
+  transition: color 0.3s;
+}
+.pcsCommodity button:hover {
+  color: var(--font-color);
+}
+.pcsCommodity button.active {
+  color: var(--font-color);
+}
+.pcsCommodity span:not(span:first-child) {
+  color: var(--low-color-font);
+}
+.sortCommodity select {
   padding: 10px 20px;
   border-radius: 20px;
-  transition: all 0.3s;
+  border: 0;
+  box-shadow: 0 0 2px #eee;
+  cursor: pointer;
+  font-family: vazir;
+  background-color: var(--as-background-color);
   color: var(--font-color);
-  background-color: #920dff;
-  box-shadow: 0 0 20px #eeeeee59;
 }
-.backTomMainPageLink:hover {
-  background-color: #7f05e2;
+.commoditys {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 270px);
+  gap: 50px;
+  justify-content: center;
+}
+.commoditys .item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+.commoditys .item:hover .optionalUserSelect{
+  opacity: 1;
 }
 
-.leftContainer .cartShop.unActive .checkShopPcs {
-  display: block;
-  animation: checkShopPcsAnimateHi 0.1s linear;
+.commoditys .item a {
+  color: var(--font-color);
 }
-.leftContainer .cartShop.active .checkShopPcs {
-  display: block;
-  animation: checkShopPcsAnimateVi 0.1s linear;
+.commoditys .item .price {
+  color: #920dff;
 }
-.leftContainer .cartShop:hover .checkShopPcs.active > * {
-  animation: checkShopPcs 0.3s ease-out;
-  transition: all 0.3s linear;
+.commoditys .item img {
+  width: 100%;
 }
-@keyframes checkShopPcs {
-  from {
-    transform: translateY(20px);
-  }
-  to {
-    transform: translateY(0px);
-  }
+.optionalUserSelect {
+  width: 100%;
+  bottom: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  direction: ltr;
+  transition: opacity .3s ;
+  opacity: 0;
 }
-@keyframes checkShopPcsAnimateHi {
-  to {
-    opacity: 0.2;
-  }
-}
-@keyframes checkShopPcsAnimateVi {
-  from {
-    opacity: 0.2;
-  }
-  to {
-    opacity: 1;
-  }
-}
-.leftContainer .cartShop .checkShopPcs .emptyView {
-  display: none;
-  flex-direction: column;
+.optionalUserSelect a {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 20px;
-  padding: 10px;
-  font-family: vazir;
+  background-color: #fff;
 }
-.leftContainer .cartShop .checkShopPcs .emptyView i {
-  font-size: 100px;
-  color: var(--low-color-font);
+.optionalUserSelect a i {
+  color: #000;
+  font-size: 20px;
 }
-.leftContainer .cartShop .checkShopPcs .emptyView a {
-  padding: 5px 20px;
-  border-radius: 20px;
-  font-size: 16px;
-  color: var(--font-color);
-  background: #a04cff;
-}
-
-.leftContainer .cartShop .checkShopPcs.empty .emptyView {
-  display: flex;
+.optionalUserSelect a img {
+  aspect-ratio: 16/9;
+  object-fit: contain;
 }
 /* toFirstPageContainer button for scroll to first page  */
 .toFirstPageContainer {
@@ -1056,11 +1090,9 @@ footer {
   justify-content: space-between;
   align-items: center;
 }
-@media screen and (min-width: 782px) {
-  .pathOfSite a,
-  .pathOfSite p,
-  .pathOfSite i {
-    display: inline;
+@media screen and (max-width: 610px) {
+  .commoditys {
+    grid-template-columns: 1fr;
   }
 }
 @media screen and (min-width: 1050px) {
@@ -1070,12 +1102,18 @@ footer {
   .rightContainer .searchInput {
     display: flex;
   }
-  .leftContainer > a:not(.cartShop),
+  .leftContainer a:not(.cartShop),
   .leftContainer > .contact {
     display: inline-flex;
   }
   .underHeaderNavbar {
     display: block;
+  }
+  .links {
+    display: flex;
+  }
+  .sortCommodity {
+    display: flex;
   }
   .footerContent {
     flex-direction: row;

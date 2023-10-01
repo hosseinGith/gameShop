@@ -7,7 +7,6 @@ function main() {
     chooseOptionMenu = document.querySelector(".chooseOptionMenu"),
     optionMenuBtn = document.querySelector(".optionMenu"),
     sortByBtn = document.querySelector(".sortByBtn"),
-    toFirstPage = document.querySelector(".toFirstPage"),
     cartShop = document.querySelector(".cartShop"),
     navChild = document.querySelector(".navChild"),
     loginBtn = document.querySelector(".contact"),
@@ -62,7 +61,17 @@ function main() {
   optionMenuBtn.addEventListener("click", () => {
     chooseOptionMenu.classList.remove("active");
   });
-
+  cartShop.addEventListener("mouseover", () => {
+    if (checkShopeds.classList.contains("active"))
+      displayElementWithAnimateHover(cartShop);
+  });
+  cartShop.addEventListener("mouseleave", (e) => {
+    if (
+      checkShopeds.classList.contains("active") &&
+      cartShop.parentElement.children[3] !== e.target
+    )
+      displayElementWithAnimateMouseLeave(cartShop);
+  });
   sortByBtn.addEventListener("click", () => {
     chooseOptionMenu.classList.add("active");
   });
@@ -77,33 +86,6 @@ function main() {
   });
   navChild.addEventListener("mouseleave", () => {
     displayElementWithAnimateMouseLeave(navChild);
-  });
-  cartShop.addEventListener("mouseover", () => {
-    if (checkShopeds.classList.contains("active"))
-      displayElementWithAnimateHover(cartShop);
-  });
-  cartShop.addEventListener("mouseleave", (e) => {
-    if (
-      checkShopeds.classList.contains("active") &&
-      cartShop.parentElement.children[3] !== e.target
-    )
-      displayElementWithAnimateMouseLeave(cartShop);
-  });
-  toFirstPage.addEventListener("click", () => {
-    window.scroll(0, 0);
-  });
-  toFirstPage.addEventListener("mouseover", () => {
-    toFirstPage.classList.add("active");
-  });
-  toFirstPage.addEventListener("mouseleave", () => {
-    toFirstPage.classList.remove("active");
-  });
-  window.addEventListener("scroll", () => {
-    if (scrollY > 100) {
-      displayElementWithAnimateHover(toFirstPage.parentElement);
-    } else if (toFirstPage.parentElement.classList.contains("active")) {
-      displayElementWithAnimateMouseLeave(toFirstPage.parentElement);
-    }
   });
   gifLoadDocument.classList.add("animation");
   gifLoadDocument.addEventListener("animationend", () =>

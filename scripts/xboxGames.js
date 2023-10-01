@@ -61,7 +61,17 @@ function main() {
     optionMenuBtn.addEventListener("click", () => {
       chooseOptionMenu.classList.remove("active");
     });
-  
+    cartShop.addEventListener("mouseover", () => {
+      if (checkShopeds.classList.contains("active"))
+        displayElementWithAnimateHover(cartShop);
+    });
+    cartShop.addEventListener("mouseleave", (e) => {
+      if (
+        checkShopeds.classList.contains("active") &&
+        cartShop.parentElement.children[3] !== e.target
+      )
+        displayElementWithAnimateMouseLeave(cartShop);
+    });
     sortByBtn.addEventListener("click", () => {
       chooseOptionMenu.classList.add("active");
     });
@@ -76,17 +86,6 @@ function main() {
     });
     navChild.addEventListener("mouseleave", () => {
       displayElementWithAnimateMouseLeave(navChild);
-    });
-    cartShop.addEventListener("mouseover", () => {
-      if (checkShopeds.classList.contains("active"))
-        displayElementWithAnimateHover(cartShop);
-    });
-    cartShop.addEventListener("mouseleave", (e) => {
-      if (
-        checkShopeds.classList.contains("active") &&
-        cartShop.parentElement.children[3] !== e.target
-      )
-        displayElementWithAnimateMouseLeave(cartShop);
     });
     gifLoadDocument.classList.add("animation");
     gifLoadDocument.addEventListener("animationend", () =>

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../../styles/beloved.css" />
+    <link rel="stylesheet" href="../../styles/xboxGames.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -21,7 +21,7 @@
       href="../../assets/images/web-page-logo-192x192.png"
       sizes="192x192"
     />
-    <title>علاقه مندی ها</title>
+    <title>بازی های XBOX</title>
   </head>
   <body>
     <header>
@@ -50,7 +50,7 @@
                 <nav class="menuOptions">
                   <ul class="menuOptionContent">
                     <li>
-                      <a href="../xboxGames/"
+                      <a href="./"
                         ><img
                           src="../../assets/svgs/XBOX.svg"
                           alt="XBOX icon / ایکس باکس"
@@ -66,7 +66,7 @@
                       >
                     </li>
                     <li>
-                      <a href="../steamGames/">
+                      <a href="../orginalGames/">
                         <img
                           src="../../assets/svgs/orginal.svg"
                           alt="orginal icon / اصلی "
@@ -86,7 +86,7 @@
                       <a href="#">
                         <img
                           src="../../assets/svgs/csGo.svg"
-                          alt="csgo icon / ماینکرافت"
+                          alt="csgo icon "
                         />
                         CS-GO
                       </a>
@@ -106,7 +106,7 @@
                       <a href="#">بازی های موبایل</a>
                     </li>
                     <li>
-                      <a href="#">ایکس باکس وان</a>
+                      <a href="./">ایکس باکس وان</a>
                     </li>
                     <li>
                       <a href="#">خرید اکانت پرمیوم</a>
@@ -256,7 +256,9 @@
                     alt="contact icon / مخاطب"
                   />
                   <p>هنوز حسابی ندارید؟</p>
-                  <a href="#" class="createAcount">یک حساب کاربری ایجاد کنید</a>
+                  <a href="#" class="createAccount"
+                    >یک حساب کاربری ایجاد کنید</a
+                  >
                 </div>
               </div>
             </div>
@@ -280,10 +282,10 @@
                     <a href="../mobileGames/">بازی های موبایل</a>
                   </li>
                   <li>
-                    <a href="../xboxGames/">ایکس باکس وان</a>
+                    <a href="./">ایکس باکس وان</a>
                   </li>
                   <li>
-                    <a href="../premiumAccount">خرید اکانت پرمیوم</a>
+                    <a href="../premiumAccount/">خرید اکانت پرمیوم</a>
                   </li>
                   <li>
                     <a href="../steamGames/">بازی های استیم و اورجین</a>
@@ -294,8 +296,8 @@
                 </ul>
               </nav>
               <li>
-                <a href="../xboxGames/"
-                  ><img
+                <a href="./">
+                  <img
                     src="../../assets/svgs/XBOX.svg"
                     alt="XBOX icon / ایکس باکس"
                   />ایکس باکس</a
@@ -348,15 +350,10 @@
           </nav>
         </div>
       </section>
-      <section class="section3">
+      <section class="section4">
         <div class="container">
           <div class="aboutSite">
-            <h1>موردعلاقه ها</h1>
-            <div class="pathOfSite">
-              <a href="../../">صفحه اصلی</a>
-              <span>/</span>
-              <p>موردعلاقه ها</p>
-            </div>
+            <h1>بازی های XBOX</h1>
           </div>
         </div>
       </section>
@@ -364,19 +361,121 @@
     <main>
       <section>
         <div class="container">
-          <div class="emptyBeloved">
-            <div class="textSubject">
-              <i class="fa-solid fa-heart-broken"></i>
-              <h2>هیچ محصولی به لیست علاقه مندی شما اضافه نشده است.</h2>
+          <div class="commoditysContainer">
+            <div class="commodityOptions">
+              <div class="pathOfSite">
+                <a href="../../">خانه</a>
+                <span>/</span>
+                <a href="../products/">فروشــــگاه</a>
+                <span>/</span>
+                <span>بازی های XBOX</span>
+              </div>
+              <div class="sortCommodity">
+                <div class="pcsCommodity">
+                  <span>نمایش:</span>
+                  <button class="pcs12">12</button>
+                  <span>/</span>
+                  <button class="pcs20">20</button>
+                  <span>/</span>
+                  <button class="pcs30">30</button>
+                  <span>/</span>
+                  <button class="allCommodity active">همه</button>
+                </div>
+                <div class="sortCommodity">
+                  <select name="sortCommodity">
+                    <option value="0">مرتب‌سازی پیش‌فرض</option>
+                    <option value="1">مرتب‌سازی بر اساس محبوبیت</option>
+                    <option value="2">مرتب‌سازی بر اساس امتیاز</option>
+                    <option value="3">مرتب‌سازی بر اساس آخرین</option>
+                    <option value="4">مرتب‌سازی بر اساس ارزانترین</option>
+                    <option value="5">مرتب‌سازی بر اساس گرانترین</option>
+                  </select>
+                </div>
+              </div>
             </div>
-            <div class="textUnderSubject">
-              <p>
-                هیچ محصولی به لیست علاقه مندی ها اضافه نشده است. شما باید برخی
-                از محصولات را به لیست علاقه مندی ها اضافه کنید.
-              </p>
-              <p>در صفحه "فروشگاه" ما محصولات جالب زیادی پیدا خواهید کرد.</p>
+            <div class="commoditys">
+              <div class="item">
+                <a href="#">
+                  <img
+                    src="../../assets/images/productsPageImg/1.webp"
+                    alt="Forza horizon 4 / فوزا هورایزون 4"
+                  />
+                  <span class="gameName"> فوزا هورایزون 4</span>
+                </a>
+                <div class="optionalUserSelect">
+                  <a href="#">
+                    <img src="../../assets/images/cart_shop.png" alt="heart" />
+                  </a>
+                  <a href="#" class="hideImgElement">
+                    <i class="fa fa-search"></i>
+                  </a>
+                  <a href="#" class="hideImgElement">
+                    <img src="../../assets/svgs/asGitIcon.svg" alt="xxxx" />
+                  </a>
+                  <a href="#">
+                    <img
+                      src="../../assets/images/heart_1077035.png"
+                      alt="heart"
+                    />
+                  </a>
+                </div>
+                <span class="price">110000 تومان</span>
+              </div>
+              <div class="item">
+                <a href="#">
+                  <img
+                    src="../../assets/images/productsPageImg/2.webp"
+                    alt="اوری و اراده خردمندان / ori"
+                  />
+                  <span class="gameName">اوری و اراده خردمندان</span>
+                </a>
+                <div class="optionalUserSelect">
+                  <a href="#">
+                    <img src="../../assets/images/cart_shop.png" alt="heart" />
+                  </a>
+                  <a href="#" class="hideImgElement">
+                    <i class="fa fa-search"></i>
+                  </a>
+                  <a href="#" class="hideImgElement">
+                    <img src="../../assets/svgs/asGitIcon.svg" alt="xxxx" />
+                  </a>
+                  <a href="#">
+                    <img
+                      src="../../assets/images/heart_1077035.png"
+                      alt="heart"
+                    />
+                  </a>
+                </div>
+                <span class="price">110000 تومان</span>
+              </div>
+              <div class="item">
+                <a href="#">
+                  <img
+                    src="../../assets/images/productsPageImg/3.webp"
+                    alt="the witcher wild hunt / ویچر ۳: وایلد هانت"
+                  />
+                  <span class="gameName">ویچر ۳: وایلد هانت</span>
+                </a>
+                <div class="optionalUserSelect">
+                  <a href="#">
+                    <img src="../../assets/images/cart_shop.png" alt="heart" />
+                  </a>
+                  <a href="#" class="hideImgElement">
+                    <i class="fa fa-search"></i>
+                  </a>
+                  <a href="#" class="hideImgElement">
+                    <img src="../../assets/svgs/asGitIcon.svg" alt="xxxx" />
+                  </a>
+                  <a href="#">
+                    <img
+                      src="../../assets/images/heart_1077035.png"
+                      alt="heart"
+                    />
+                  </a>
+                </div>
+                <span class="price">110000 تومان</span>
+              </div>
             </div>
-            <a class="backTomMainPageLink" href="../../">بازگشت به فروشگاه</a>
           </div>
         </div>
       </section>
@@ -486,7 +585,7 @@
         <div class="footerDiv container">
           <div class="footerContent">
             <div class="logoAndAboutAs">
-              <a href="./" class="logo">
+              <a href="../../" class="logo">
                 <img
                   src="../../assets/images/logo.png"
                   alt="loman  / لومان فروشــــگاه بازی"
@@ -632,6 +731,6 @@
         </div>
       </section>
     </footer>
-    <script src="../../scripts/beloved.js"></script>
+    <script src="../../scripts/xboxGames.js"></script>
   </body>
 </html>
